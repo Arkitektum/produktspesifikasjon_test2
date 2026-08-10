@@ -1,0 +1,302 @@
+name: Generate produktspesifikasjon
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      config_path:
+        description: Optional path to a single config YAML in repo root. Leave empty to process all root-level configs.
+        default: ""
+        required: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: set-matrix
+        run: |
+          set -euo pipefail
+          input="${{ github.event.inputs.config_path }}"
+          if [ -n "$input" ]; then
+            paths=("$input")
+          else
+            mapfile -t paths < <(find . -maxdepth 1 -type f -name '*.yml' ! -name '*.schema.yml' -printf '%P\n' | sort)
+          fi
+
+          if [ "${#paths[@]}" -eq 0 ]; then
+            echo "No config.yml files found under produktspesifikasjon/" >&2
+            exit 1
+          fi
+
+          json=$(printf '%s\n' "${paths[@]}" | jq -R . | jq -cs '{config_path: .}')
+          echo "matrix=$json" >> "$GITHUB_OUTPUT"
+
+  produktspesifikasjon:
+    runs-on: ubuntu-latest
+    needs: discover
+    strategy:
+      matrix: ${{ fromJson(needs.discover.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Load produktspesifikasjon config
+        id: config
+        env:
+          CONFIG_PATH: ${{ matrix.config_path }}
+        run: |
+          python - <<'PY'
+          import os
+
+          config_path = os.environ["CONFIG_PATH"]
+          workspace = os.getcwd()
+          target = os.path.normpath(os.path.join(workspace, config_path))
+          base = workspace
+
+          try:
+              inside = os.path.commonpath([base, target]) == base
+          except ValueError:
+              inside = False
+          if not inside:
+              raise SystemExit(
+                  f"Config path must stay inside produktspesifikasjon/: {config_path}"
+              )
+
+          try:
+              with open(target, encoding="utf-8") as fh:
+                  lines = fh.readlines()
+          except FileNotFoundError as exc:
+              raise SystemExit(f"Config file not found: {config_path}") from exc
+
+          values = {}
+          list_values = {}
+          current_list_key = None
+          scopes = []
+          in_scopes = False
+          scopes_indent = None
+          current_scope = None
+
+          for raw in lines:
+              line_no_comment = raw.split("#", 1)[0].rstrip("\n")
+              if not line_no_comment.strip():
+                  continue
+
+              # Handle scopes section (list of dicts)
+              if line_no_comment.strip().startswith("scopes:"):
+                  in_scopes = True
+                  scopes_indent = None
+                  current_scope = None
+                  current_list_key = None
+                  continue
+
+              if in_scopes:
+                  raw_line = line_no_comment
+                  indent = len(raw_line) - len(raw_line.lstrip(" "))
+                  if scopes_indent is None and raw_line.lstrip(" ").startswith("- "):
+                      scopes_indent = indent
+                  if scopes_indent is not None and indent < scopes_indent:
+                      # End of scopes list.
+                      if current_scope:
+                          scopes.append(current_scope)
+                          current_scope = None
+                      in_scopes = False
+                  if not in_scopes:
+                      pass  # fall through to normal parsing for this line
+                  else:
+                      content = raw_line.lstrip(" ")
+                      if content.startswith("- "):
+                          if current_scope:
+                              scopes.append(current_scope)
+                          current_scope = {}
+                          content = content[2:]
+                          if ":" in content:
+                              key, value = content.split(":", 1)
+                              key = key.strip()
+                              value = value.strip().strip("'").strip('"')
+                              if key:
+                                  current_scope[key] = value
+                      elif ":" in content and current_scope is not None:
+                          key, value = content.split(":", 1)
+                          key = key.strip()
+                          value = value.strip().strip("'").strip('"')
+                          if key:
+                              current_scope[key] = value
+                      continue
+
+              # Handle simple list items (e.g. include_only_features)
+              lstrip = line_no_comment.lstrip()
+              if lstrip.startswith("- ") and current_list_key:
+                  item = lstrip[2:].strip().strip("'").strip('"')
+                  if item:
+                      list_values.setdefault(current_list_key, []).append(item)
+                  continue
+
+              if ":" not in line_no_comment:
+                  continue
+
+              key, value = line_no_comment.strip().split(":", 1)
+              key = key.strip()
+              value = value.strip().strip("'").strip('"')
+
+              if value == "":
+                  current_list_key = key
+                  list_values.setdefault(key, [])
+                  continue
+
+              current_list_key = None
+              values[key] = value
+
+          if in_scopes and current_scope:
+              scopes.append(current_scope)
+
+          required_map = {
+              "metadataId": "metadata-id",
+              "output_directory": "output-directory",
+              "product_slug": "product-slug",
+              "updated": "updated",
+          }
+          optional_map = {
+              "ogc_feature_api": "ogc-feature-api",
+              "xmi_url": "xmi-model",
+          }
+
+          missing = [
+              k
+              for k in required_map
+              if not values.get(k)
+          ]
+          if missing:
+              raise SystemExit(
+                  "Missing required keys in config.yml: "
+                  + ", ".join(missing)
+              )
+
+          feature_filter = []
+          if list_values.get("include_only_features"):
+              feature_filter = list_values["include_only_features"]
+          elif values.get("include_only_features"):
+              feature_filter = [
+                  item.strip()
+                  for item in values["include_only_features"].split(",")
+                  if item.strip()
+              ]
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh_out:
+              for source, dest in required_map.items():
+                  if values.get(source):
+                      gh_out.write(f"{dest}={values[source]}\n")
+              for source, dest in optional_map.items():
+                  value = values.get(source)
+                  if value:
+                      gh_out.write(f"{dest}={value}\n")
+              if feature_filter:
+                  gh_out.write(
+                      "feature-type-filter="
+                      + ",".join(feature_filter)
+                      + "\n"
+                  )
+              if scopes:
+                  import json
+                  gh_out.write("scopes=" + json.dumps(scopes) + "\n")
+          PY
+
+      - id: prepare
+        uses: arkitektum/ps.editor.actions@main
+        with:
+          feature-type-filter: ${{ steps.config.outputs.feature-type-filter }}
+          metadata-id: ${{ steps.config.outputs.metadata-id }}
+          ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
+          output-directory: ${{ steps.config.outputs.output-directory }}
+          product-slug: ${{ steps.config.outputs.product-slug }}
+          scopes: ${{ steps.config.outputs.scopes }}
+          updated: ${{ steps.config.outputs.updated }}
+          xmi-model: ${{ steps.config.outputs.xmi-model }}
+
+      - name: Render UML to PNG
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y plantuml graphviz
+          set -euo pipefail
+          root="${{ steps.config.outputs.output-directory }}"
+          if [ -z "$root" ]; then
+            echo "No output directory set; skipping PlantUML render."
+            exit 0
+          fi
+          if [ ! -d "$root" ]; then
+            echo "Output directory not found: $root"
+            exit 0
+          fi
+          mapfile -t files < <(find "$root" -type f -name '*.puml' | sort)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No .puml files found under $root"
+            exit 0
+          fi
+          for file in "${files[@]}"; do
+            if [ "${file:0:1}" != "/" ]; then
+              file="$PWD/$file"
+            fi
+            if [ ! -s "$file" ]; then
+              echo "Skipping PlantUML render; file missing or empty: $file"
+              continue
+            fi
+            if ! grep -q "@startuml" "$file"; then
+              echo "Skipping PlantUML render; no diagram found in: $file"
+              continue
+            fi
+            output_dir="$(dirname "$file")"
+            plantuml -tpng -output "$output_dir" "$file"
+          done
+
+      - name: Derive PNG path
+        if: steps.prepare.outputs.feature-catalogue-uml != ''
+        id: feature-png
+        run: |
+          png="${{ steps.prepare.outputs.feature-catalogue-uml }}"
+          png="${png%.puml}.png"
+          echo "path=$png" >> "$GITHUB_OUTPUT"
+
+      - name: Derive XMI PNG path
+        if: steps.prepare.outputs.xmi-feature-catalogue-uml != ''
+        id: xmi-feature-png
+        run: |
+          png="${{ steps.prepare.outputs.xmi-feature-catalogue-uml }}"
+          png="${png%.puml}.png"
+          echo "path=$png" >> "$GITHUB_OUTPUT"
+
+      - id: assemble
+        uses: arkitektum/ps.editor.actions/assemble@main
+        with:
+          psdata-path: ${{ steps.prepare.outputs.psdata-path }}
+          output-path: ${{ steps.prepare.outputs.spec-markdown }}
+          feature-catalogue-markdown: ${{ steps.prepare.outputs.feature-catalogue-markdown }}
+          feature-catalogue-uml: ${{ steps.prepare.outputs.feature-catalogue-uml }}
+          feature-catalogue-png: ${{ steps.feature-png.outputs.path }}
+          xmi-feature-catalogue-markdown: ${{ steps.prepare.outputs.xmi-feature-catalogue-markdown }}
+          xmi-feature-catalogue-uml: ${{ steps.prepare.outputs.xmi-feature-catalogue-uml }}
+          xmi-feature-catalogue-png: ${{ steps.xmi-feature-png.outputs.path }}
+          updated: ${{ steps.config.outputs.updated }}
+      - name: Inspect generated files
+        run: |
+          echo "Markdown: ${{ steps.prepare.outputs.spec-markdown }}"
+          echo "psdata:  ${{ steps.prepare.outputs.psdata-path }}"
+      - name: Create pull request with produktspesifikasjon
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: update produktspesifikasjon
+          title: update produktspesifikasjon
+          branch: update-produktspesifikasjon
+          branch-suffix: timestamp
+          delete-branch: true
+          add-paths: |
+            ${{ steps.config.outputs.output-directory }}/
+            ${{ steps.prepare.outputs.psdata-path }}
+          body: |
+            This pull request was automatically generated by the **Generate produktspesifikasjon** workflow.
+
+            - Config file: `${{ matrix.config_path }}`
+            - Generated markdown: `${{ steps.prepare.outputs.spec-markdown }}`
+            - Generated psdata: `${{ steps.prepare.outputs.psdata-path }}`
