@@ -1,0 +1,193 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Byutviklingsområde Bodø",
+  "format": "text/html",
+  "date": {
+    "creation": "2015-01-01",
+    "revision": "2025-11-25"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Mats Martinussen",
+    "organizationName": "Bodø kommune",
+    "logo": "https://register.geonorge.no/data/organizations/46px-Bodø_komm.svg.png",
+    "electronicMailAddress": "mats.martinussen@bodo.kommune.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Byutviklingsområde Bodø",
+    "abstract": "Byutviklingsområdet i Bodø er todelt. Det er vedtatt som et bestemmelsesområde i kommuneplanens arealdel. Innafor byutviklingsområdet er det andre bestemmelser for bolig- og næringsutvikling enn utenfor. Grensene har vært uendra over flere planperioder.",
+    "purpose": {
+      "summary": "Vise byutviklingsområdet i Bodø",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Datasettet kan benyttes av den som måtte ha bruk for tilgang til byutviklingsområdet i Bodø. For analyser, utarbeiding av planer med mer."
+      }
+    },
+    "topicCategory": [
+      "Administrative grenser"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "uniqueId": "9a45d89a-cd80-4550-a7f8-3e750b0194b9",
+    "keyword": [
+      "Byutviklingsområde",
+      "Bodø kommune",
+      "Administrative enheter",
+      "Det offentlige kartgrunnlaget",
+      "Plan"
+    ],
+    "restriction": {
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "No conditions apply to access and use",
+        "licenseUrl": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Mats Martinussen",
+        "organizationName": "Bodø kommune",
+        "electronicMailAddress": "mats.martinussen@bodo.kommune.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Sveinung Bertnes Råheim",
+        "organizationName": "Bodø kommune",
+        "electronicMailAddress": "sveinung.bertnes.raheim@bodo.kommune.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "Sveinung Bertnes Råheim",
+        "organizationName": "Bodø kommune",
+        "electronicMailAddress": "sveinung.bertnes.raheim@bodo.kommune.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Etter behov",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "12.729971",
+        "eastBoundLongitude": "15.364907",
+        "southBoundLatitude": "66.920554",
+        "northBoundLatitude": "67.699619"
+      },
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2015-01-01",
+          "endPosition": "2025-11-25"
+        }
+      }
+    },
+    "date": {
+      "creation": "2015-01-01",
+      "publication": "2015-01-01",
+      "revision": "2025-11-25"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Ogcfeatureserver",
+        "level": "dataset",
+        "levelDescription": "OGC API-Features fra Bodø kommune"
+      }
+    }
+  ],
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    }
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Etter behov",
+    "maintenanceAndUpdateStatement": "Arkivert"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "kommunevis",
+          "deliveryMediumName": "Geonorge filnedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.geonorge.no/geonorge/kommunaleDokData/9a45d89a-cd80-4550-a7f8-3e750b0194b9.zip",
+            "serviceProperty": {
+              "type": "Geonorge filnedlastning",
+              "value": "GEONORGE:FILEDOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "kommunevis",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://services-eu1.arcgis.com/bUDP8dxTEFYEUa8w/arcgis/rest/services/Byutviklingsomradet/OGCFeatureServer",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GeoJSON"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "kommunevis",
+          "deliveryMediumName": "WFS-tjeneste",
+          "deliveryService": {
+            "serviceEndpoint": "https://dservices-eu1.arcgis.com/bUDP8dxTEFYEUa8w/arcgis/services/Byutviklingsomr%C3%A5det/WFSServer?request=getcapabilities&service=wfs",
+            "serviceProperty": {
+              "type": "WFS-tjeneste",
+              "value": "OGC:WFS"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2025-11-26",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Bodø kommune",
+      "individualName": "Sveinung Bertnes Råheim",
+      "logo": "https://register.geonorge.no/data/organizations/46px-Bodø_komm.svg.png",
+      "electronicMailAddress": "sveinung.bertnes.raheim@bodo.kommune.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "9a45d89a-cd80-4550-a7f8-3e750b0194b9",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/9a45d89a-cd80-4550-a7f8-3e750b0194b9"
+    }
+  }
+}
