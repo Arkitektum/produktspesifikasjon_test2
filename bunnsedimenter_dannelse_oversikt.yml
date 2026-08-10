@@ -1,0 +1,9 @@
+metadataId: 79b687ac-7eba-4432-97e2-04dcbc98ccd6
+output_directory: produktspesifikasjon
+product_slug: bunnsedimenter_dannelse_oversikt
+updated: '2026-08-10'
+scopes:
+- name: Ny datakilde
+  url: https://geo.ngu.no/api/features/bunnsedimentdannelseoversikt
+  generator: ogc_feature_api
+  description: ''
