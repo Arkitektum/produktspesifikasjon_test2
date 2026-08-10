@@ -1,0 +1,366 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Bunnsedimenter (dannelse), oversikt",
+  "format": "text/html",
+  "date": {
+    "revision": "2022-05-19"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Valérie Bellec",
+    "organizationName": "Norges geologiske undersøkelse",
+    "logo": "https://register.geonorge.no/data/organizations/970188290_NGU_hovedlogo_svart.svg thumbnail.png",
+    "electronicMailAddress": "valerie.bellec@ngu.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Bunnsedimenter (dannelse), oversikt",
+    "abstract": "Datasettet viser bunnsedimenter i havbunnens øvre del (1-2 m under sjøbunnen), klassifisert etter jordartstype. Jordart som egenskap beskriver løsmassenens dannelsesmåte. Dataene dekker deler av Norsk kontinentalsokkel i Norskehavet, Nordsjøen og i Skagerrak. Datagrunnlaget for dette tema er innholdet i kvartærgeologiske kart (løsmassekart) som foreligger analogt, og/eller digitale data fra moderne kartlegging. Dataene er digitalisert med tanke på presentasjon i målestokk =<1:1 000 000 (oversiktskart).",
+    "purpose": {
+      "summary": "Kunnskap om løsmassene er nødvendig for å forstå prosesser i det marine miljøet, og kunnskap om fordeling av løsmasser er viktig for en best mulig forvaltning av havområder og ressurser.",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Datasettet kan anvendes som underlag i overordnet areal- og miljøplanlegging. Datasettet kan også benyttes som underlag i forbindelse med planlegging av undersøkelser innen f.eks. sårbarhetsanalyse, habitatskartlegging osv."
+      }
+    },
+    "topicCategory": [
+      "Geovitenskapelig informasjon"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "spatialResolution": {
+      "equivalentScale": "1000000"
+    },
+    "supplementalInformation": "Datasettet er satt sammen av data fra flere kartleggingsprosjekter, der ulike metoder for sjøbunnskartlegging og datatolkning er blitt brukt.",
+    "uniqueId": "https://data.geonorge.no/sosi/geologi/bunnsediment_dannelse_oversikt",
+    "keyword": [
+      "avsetning",
+      "sediment",
+      "bart fjell",
+      "bunntyper",
+      "ekkolodd",
+      "geologi",
+      "habitat",
+      "hav",
+      "havbunn",
+      "løsmasser",
+      "marin",
+      "maringeologi",
+      "multistråleekkolodd",
+      "overflatesediment",
+      "sand",
+      "silt",
+      "slam",
+      "stein",
+      "undervanns",
+      "sjøbunn",
+      "kartlegging",
+      "natur",
+      "naturtype",
+      "prosesser",
+      "jordart",
+      "kvartærgeologi",
+      "kvartære sedimenter",
+      "glasimarin",
+      "morene",
+      "bunnstrøm",
+      "skredavsetning",
+      "løsmasseskred",
+      "suspensjonsavsetning",
+      "Norge",
+      "norsk kontinentalsokkel",
+      "Norskehavet",
+      "Skagerrak",
+      "Nordsjøen",
+      "Havområder",
+      "Inspire",
+      "Norge digitalt",
+      "geodataloven",
+      "Mareano",
+      "fellesDatakatalog",
+      "NGU"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Detaljnivået på datasettet tilsier bruk innenfor kartmålestokken: 1:250.000 - 1:1.000.000"
+      },
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Norsk lisens for offentlige data (NLOD)",
+        "licenseUrl": "http://data.norge.no/nlod/no/1.0"
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Valérie Bellec",
+        "organizationName": "Norges geologiske undersøkelse",
+        "electronicMailAddress": "valerie.bellec@ngu.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Janne Grete Wesche",
+        "organizationName": "Norges geologiske undersøkelse",
+        "electronicMailAddress": "metadataansvarlig@ngu.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "Aave Lepland",
+        "organizationName": "Norges geologiske undersøkelse",
+        "electronicMailAddress": "Aave.Lepland@ngu.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Ikke planlagt",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "2.0",
+        "eastBoundLongitude": "33.0",
+        "southBoundLatitude": "57.0",
+        "northBoundLatitude": "72.0"
+      },
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2022-05-19",
+          "endPosition": "2022-05-19"
+        }
+      }
+    },
+    "date": {
+      "revision": "2022-05-19"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Ny datakilde",
+        "level": "dataset"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25835",
+        "name": "EUREF89 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:32632",
+        "name": "WGS84 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:32633",
+        "name": "WGS84 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:32635",
+        "name": "WGS84 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:4326",
+        "name": "WGS84 Geografisk"
+      },
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services",
+        "measureDescription": "Datasettet er i henhold til nasjonal produktspesifikasjon",
+        "descriptiveResult": "Datasettet er i henhold til nasjonal produktspesifikasjon"
+      },
+      {
+        "nameOfMeasure": "SOSI produktspesifikasjon: Bunnsedimenter dannelse",
+        "measureDescription": "Dataene er ikke vurdert iht produktspesifikasjonen",
+        "descriptiveResult": "Dataene er ikke vurdert iht produktspesifikasjonen"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "measureDescription": "SOSI-filer er ikke vurdert i henhold til applikasjonsskjema",
+        "descriptiveResult": "SOSI-filer er ikke vurdert i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "measureDescription": "GML-filer er ikke vurdert i henhold til applikasjonsskjema",
+        "descriptiveResult": "GML-filer er ikke vurdert i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Prosentvis dekning i forhold til datasettets utstrekning",
+        "measureDescription": "Datasettets faktiske kartlagte areal i forhold til datasettets spesifiserte utstrekning",
+        "result": "30"
+      },
+      {
+        "nameOfMeasure": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measureDescription": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "98"
+      },
+      {
+        "nameOfMeasure": "FAIR",
+        "result": "Prosentvis oppfyllelse av FAIR-prinsipper: 98%"
+      },
+      {
+        "nameOfMeasure": "Coverage",
+        "result": "Prosentvis dekning i forhold til datasettets utstrekning: 30%"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Ikke planlagt",
+    "maintenanceAndUpdateStatement": "Fullført"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "Datasettet er tolket og digitalisert av NGU, men grunnlagget for tolkninger er data fra Norges geologiske undersøkelse (NGU), Kartverkets sjødivisjon, IBCAO, OLEX og Institutt for Kontinentalsokkelundersøkelser (IKU). I tillegg er en rekke vitenskapelige artikler, rapporter og eldre kart brukt til sammensetting av dannelseskartet. Datatemaet Bunnsedimenter (dannelse), oversikt er hovedsakelig basert på analyser av sedimentprøver fra havbunnen og tolkning av analoge og digitale seismiske data. I begrenset omfang er det også blitt brukt tolkning av digitale reflektivitetsdata og havbunnsvideo. Vanndypsdata har inngått som støtte i tolkningen. Dataene er digitalisert og tilrettelagt vha. Arc GIS verktøy. Metodikken er beskrevet i egenskapsfeltene Målemetode og Geopåvisningtype. Temakoder og egenskaper følger i hovedsak SOSI-standarden."
+        }
+      ]
+    }
+  },
+  "portrayal": {
+    "name": "Tegneregler",
+    "linkage": "https://register.geonorge.no/tegneregler/bunnsedimenter-dannelse"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Egen nedlastningsside",
+          "deliveryService": {
+            "serviceEndpoint": "https://geo.ngu.no/download/order?dataset=708",
+            "serviceProperty": {
+              "type": "Egen nedlastningsside",
+              "value": "WWW:DOWNLOAD-1.0-http--download"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.ngu.no/api/capabilities/",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.ngu.no/api/atom/79b687ac-7eba-4432-97e2-04dcbc98ccd6",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Marine bunnsedimenter WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://geo.ngu.no/mapserver/MarinBunnsedimenterWMS/?request=getcapabilities&service=wms&version=1.3.0",
+            "serviceProperty": {
+              "type": "Marine bunnsedimenter WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "png",
+            "version": "1.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-08-10",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Norges geologiske undersøkelse",
+      "individualName": "Janne Grete Wesche",
+      "logo": "https://register.geonorge.no/data/organizations/970188290_NGU_hovedlogo_svart.svg thumbnail.png",
+      "electronicMailAddress": "metadataansvarlig@ngu.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "79b687ac-7eba-4432-97e2-04dcbc98ccd6",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/79b687ac-7eba-4432-97e2-04dcbc98ccd6"
+    }
+  }
+}
