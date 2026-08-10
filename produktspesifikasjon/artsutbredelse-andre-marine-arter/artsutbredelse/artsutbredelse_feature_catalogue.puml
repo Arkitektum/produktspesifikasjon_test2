@@ -1,0 +1,65 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Artsutbredelse andre marine arter - Artsutbredelse - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class utbredelse_ovrig <<featureType>> {
+    + objectid [0..1] : Integer
+    + geoserver_ [0..1] : CharacterString
+    + animal_gro [0..1] : CharacterString
+    + species_no [0..1] : CharacterString
+    + wms_code [0..1] : CharacterString
+    + map_type_n [0..1] : CharacterString
+    + map_type_i [0..1] : CharacterString
+    + info_no [0..1] : CharacterString
+    + ecosystem_ [0..1] : CharacterString
+    + stock_no [0..1] : CharacterString
+    + reference [0..1] : CharacterString
+    + source_no [0..1] : CharacterString
+    + species_la [0..1] : CharacterString
+    + species_en [0..1] : CharacterString
+    + map_type_e [0..1] : CharacterString
+    + info_en [0..1] : CharacterString
+    + stock_en [0..1] : CharacterString
+    + source_en [0..1] : CharacterString
+    + url [0..1] : CharacterString
+    + update [0..1] : Date
+    + start_date [0..1] : Date
+    + end_date [0..1] : Date
+    + start_mmdd [0..1] : CharacterString
+    + end_mmdd [0..1] : CharacterString
+    + sort_nmb [0..1] : CharacterString
+
+    ..Geometri..
+    + geometry [1] : GM_MultiSurface
+  }
+}
+
+@enduml

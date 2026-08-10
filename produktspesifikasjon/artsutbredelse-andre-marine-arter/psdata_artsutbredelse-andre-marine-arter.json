@@ -1,0 +1,325 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Artsutbredelse andre marine arter",
+  "format": "text/html",
+  "date": {
+    "creation": "2017-10-05",
+    "revision": "2025-12-08"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "datahjelp",
+    "organizationName": "Havforskningsinstituttet",
+    "logo": "https://register.geonorge.no/data/organizations/971349077_hi_liten.png",
+    "electronicMailAddress": "datahjelp@hi.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Artsutbredelse andre marine arter",
+    "abstract": "Datasettet inneholder generaliserte utbredelseskart av andre marine arter i norske områder som ikke dekkes i kategoriene \"fisk\" eller \"sjøpattedyr\", basert på artsansvarlig sin tolkning av utberedelsen de siste 30 årene. Mer informasjon om datagrunnlaget og arten kan man finne hos Havforskningsinstituttet: https://www.hi.no/hi/temasider/arter. \n\nKartlagene er delt inn i temalag for de forskjellige artene. Eksempler på temalag er utbredelsesområder og høsteområder. Det er definert et gyldighetsområde for de fleste artsutbredelseskartene. \n\nFor å se på, finne tilgangslenker eller laste ned hele eller deler av dette datasettet, gå til kart.hi.no/datasett.",
+    "purpose": {
+      "summary": "Basisdata for forskning og forvaltning. Artsutbredelseskartene viser utbredelsen av de ulike marine artene.",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Datasettet kan brukes til eksempelvis forskning, forvaltning eller bare som generell informasjon."
+      }
+    },
+    "topicCategory": [
+      "Biologisk mangfold"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "spatialResolution": {
+      "equivalentScale": "1000"
+    },
+    "supplementalInformation": "Datasettet består av polygoner som representerer områder der artsansvarlig forsker ved Havforskningsinstituttet har definert artens utbredelse. Det er en ekspertvurdering som bygger på data fra de siste 30 år. \nEgenskapene omfatter artsnavn på norsk, engelsk og latin.\n\nFull liste over arter og egenskaper er listet opp i produktarket",
+    "uniqueId": "https://data.geonorge.no/sosi/biomangfold/artsutbredelse",
+    "keyword": [
+      "Hav",
+      "Havets ressurse",
+      "Dypvannsreke",
+      "Haneskjell",
+      "Hummer",
+      "Kamskjell",
+      "Kongekrabbe",
+      "Sjøkreps",
+      "Snøkrabbe",
+      "Stortare",
+      "Taskekrabbe",
+      "Utbredelse",
+      "utbredelsesområde",
+      "høsting",
+      "gyldighetsområde",
+      "Art",
+      "artsutbredelse",
+      "Norske havområder",
+      "Artsfordeling",
+      "Norge digitalt",
+      "geodataloven",
+      "fellesDatakatalog",
+      "Kyst og fiskeri",
+      "Natur"
+    ],
+    "restriction": {
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Creative Commons BY 4.0 (CC BY 4.0)",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "securityConstraints": {
+        "classification": "Ugradert"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "datahjelp",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "datahjelp@hi.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Marte L. Strømme",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "marte.stromme@hi.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "datahjelp@hi.no",
+        "organizationName": "Havforskningsinstituttet",
+        "electronicMailAddress": "datahjelp@hi.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Etter behov",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "60.0",
+        "eastBoundLongitude": "85.0",
+        "southBoundLatitude": "0.0",
+        "northBoundLatitude": "90.0"
+      },
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2017-10-05",
+          "endPosition": "2025-12-08"
+        }
+      }
+    },
+    "date": {
+      "creation": "2017-10-05",
+      "publication": "2017-10-05",
+      "revision": "2025-12-08"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Artsutbredelse",
+        "level": "dataset",
+        "levelDescription": "OGC API-Features fra Havforskningsinstituttet"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:4326",
+        "name": "WGS84 Geografisk"
+      },
+      {
+        "code": "EPSG:4326",
+        "name": "WGS84 Geografisk"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "Prosentvis dekning i forhold til datasettets utstrekning",
+        "measureDescription": "Datasettets faktiske kartlagte areal i forhold til datasettets spesifiserte utstrekning",
+        "result": "100"
+      },
+      {
+        "nameOfMeasure": "Coverage",
+        "result": "Prosentvis dekning i forhold til datasettets utstrekning: 100%"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Etter behov",
+    "maintenanceAndUpdateStatement": "Kontinuerlig oppdatert"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "Datasettet består av polygoner som representerer områder der artsansvarlig forsker ved Havforskningsinstituttet har definert artens utbredelse. Det er en ekspertvurdering som bygger på data fra de siste 30 år."
+        }
+      ]
+    }
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "Egen nedlastningsside",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/datasett",
+            "serviceProperty": {
+              "type": "Egen nedlastningsside",
+              "value": "WWW:DOWNLOAD-1.0-http--download"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "GeoJSON"
+          },
+          {
+            "formatName": "Shape"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "WMS-tjeneste",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/data/utbredelseskart/utbredelse_ovrig/ows?request=GetCapabilities&service=WMS",
+            "serviceProperty": {
+              "type": "WMS-tjeneste",
+              "value": "OGC:WMS"
+            }
+          }
+        }
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "WFS-tjeneste",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/data/utbredelseskart/utbredelse_ovrig/ows?request=GetCapabilities&service=WFS",
+            "serviceProperty": {
+              "type": "WFS-tjeneste",
+              "value": "OGC:WFS"
+            }
+          }
+        }
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "unitsOfDelivery": "landsfiler",
+          "deliveryMediumName": "OGC API-Features",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/data/utbredelseskart/utbredelse_ovrig/ogc/features/v1/collections?f=text%2Fhtml",
+            "serviceProperty": {
+              "type": "OGC API-Features",
+              "value": "OGC:API-Features"
+            }
+          }
+        }
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Artsutbredelse andre marine arter WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/data/",
+            "serviceProperty": {
+              "type": "Artsutbredelse andre marine arter WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "WMS",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Artsutbredelse WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/data/utbredelseskart/wms/ows?request=GetCapabilities&service=WMS",
+            "serviceProperty": {
+              "type": "Artsutbredelse WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "WMS-tjeneste"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Artsutbredelse andre marine arter",
+          "deliveryService": {
+            "serviceEndpoint": "https://kart.hi.no/data/utbredelseskart/utbredelse_ovrig/ows?request=GetCapabilities&service=WMS",
+            "serviceProperty": {
+              "type": "Artsutbredelse andre marine arter",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "[{}]"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-01-08",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Havforskningsinstituttet",
+      "individualName": "Marte L. Strømme",
+      "logo": "https://register.geonorge.no/data/organizations/971349077_hi_liten.png",
+      "electronicMailAddress": "marte.stromme@hi.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "7c36da6f-3bb3-49cc-8968-5d246ee9eb46",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/7c36da6f-3bb3-49cc-8968-5d246ee9eb46"
+    }
+  }
+}
