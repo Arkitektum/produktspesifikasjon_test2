@@ -27,7 +27,7 @@ logo: "https://register.geonorge.no/data/organizations/970188290_NGU_hovedlogo_s
   - **Til**: 2026-08-04
 
 ## Om spesifikasjonen
-
+Denne produktspesifikasjonen beskriver datasettet og hvordan det skal forstås av brukere som skal lese, produsere eller utveksle data.
 
 > **Denne versjonen av produktspesifikasjonen:** <br>
 > **Opprettet dato:** 2000-09-05<br>
@@ -72,8 +72,15 @@ Grunnvannsborehull er et punkt hvor det er foretatt en boring etter grunnvann, o
 
 Datasettet gir en landsdekkende oversikt over borede grunnvannsbrønner, energibrønner og naturlige oppkommer av grunnvann (tidligere kalt kilder). Grunnvannsborehull er et punkt hvor det er foretatt en boring etter grunnvann, og hvor formålet er vannforsyning, landsomfattende overvåkning av grunnvannsparametre over tid, etablering av energibrønner til grunnvarmeanlegg, oversikt over naturlige oppkommer (kilder) eller undersøkelsesbrønner (sonderinger).
 
-## Omfang
+## Identifikasjon
 
+- **Kortnavn:** 
+- **Versjon:** 
+- **Dato:** 
+
+## Avgrensning
+
+Denne spesifikasjonen omfatter …
 ### Hele datasettet
 
 **Nivå**: dataset
