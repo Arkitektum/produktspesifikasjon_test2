@@ -1,0 +1,11 @@
+metadataId: 8252baea-5bad-428b-8f18-fe236fa4ced6
+output_directory: produktspesifikasjon
+product_slug: dyrkbar_jord
+updated: '2026-08-12'
+scopes:
+- name: Dyrkbar jord
+  url: https://ogcapi.nibio.no/felles/dyrkbarjord
+  generator: ogc_feature_api
+  description: OGC API – Features (koblet til datasettet i Geonorge)
+  username_secret: DYRKBARCLIENTID
+  password_secret: DYRKBARCLIENTKEY
