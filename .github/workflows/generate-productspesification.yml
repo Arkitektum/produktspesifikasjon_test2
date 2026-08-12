@@ -48,9 +48,6 @@ jobs:
         id: config
         env:
           CONFIG_PATH: ${{ matrix.config_path }}
-          # Gir config-steget tilgang til alle secrets, så per-scope
-          # username_secret/password_secret kan resolves til verdier.
-          SECRETS_JSON: ${{ toJSON(secrets) }}
         run: |
           python - <<'PY'
           import os
@@ -188,25 +185,31 @@ jobs:
                   if item.strip()
               ]
 
-          # Per-scope pålogging: bytt secret-NAVN med secret-VERDI fra SECRETS_JSON,
-          # og fjern navnene før scopene sendes videre til action-en.
+          # OGC-pålogging: les kun secret-NAVNene fra config (fra den første
+          # OGC-kilden som har dem). Selve verdien slås opp trygt med secrets[...]
+          # i action-steget under — vi rører ALDRI secret-verdier her, så
+          # workflowen trigger ikke GitHubs «malicious workflow»-varsel.
           import json
 
-          try:
-              secrets_json = json.loads(os.environ.get("SECRETS_JSON") or "{}")
-          except json.JSONDecodeError:
-              secrets_json = {}
-          # Secret-navn er case-uavhengige i GitHub — slå opp case-insensitivt.
-          secrets_ci = {k.upper(): v for k, v in secrets_json.items()}
+          ogc_username_secret = ""
+          ogc_password_secret = ""
           for scope in scopes:
-              user_secret = scope.pop("username_secret", None)
-              pass_secret = scope.pop("password_secret", None)
-              if user_secret and secrets_ci.get(user_secret.upper()):
-                  scope["username"] = secrets_ci[user_secret.upper()]
-              if pass_secret and secrets_ci.get(pass_secret.upper()):
-                  scope["password"] = secrets_ci[pass_secret.upper()]
+              gen = str(scope.get("generator", "")).strip().lower()
+              if gen in ("ogc_feature_api", "ogc_api", "ogc"):
+                  if not ogc_username_secret and scope.get("username_secret"):
+                      ogc_username_secret = scope["username_secret"]
+                  if not ogc_password_secret and scope.get("password_secret"):
+                      ogc_password_secret = scope["password_secret"]
+          # Fjern secret-navnene fra scopene før de sendes videre.
+          for scope in scopes:
+              scope.pop("username_secret", None)
+              scope.pop("password_secret", None)
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh_out:
+              if ogc_username_secret:
+                  gh_out.write(f"ogc_username_secret={ogc_username_secret}\n")
+              if ogc_password_secret:
+                  gh_out.write(f"ogc_password_secret={ogc_password_secret}\n")
               for source, dest in required_map.items():
                   if values.get(source):
                       gh_out.write(f"{dest}={values[source]}\n")
@@ -230,10 +233,11 @@ jobs:
           feature-type-filter: ${{ steps.config.outputs.feature-type-filter }}
           metadata-id: ${{ steps.config.outputs.metadata-id }}
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
-          # Global fallback for det globale ogc_feature_api-feltet / scopes uten
-          # egne secrets. Per-scope credentials overstyrer disse i action-en.
-          ogc-username: ${{ secrets.CLIENTID }}
-          ogc-password: ${{ secrets.CLIENTKEY }}
+          # Slår opp secret-verdien dynamisk fra navnet i config (single-secret,
+          # ingen toJSON). Faller tilbake på CLIENTID/CLIENTKEY hvis config ikke
+          # oppgir navn (bakoverkompatibelt).
+          ogc-username: ${{ secrets[steps.config.outputs.ogc_username_secret] || secrets.CLIENTID }}
+          ogc-password: ${{ secrets[steps.config.outputs.ogc_password_secret] || secrets.CLIENTKEY }}
           output-directory: ${{ steps.config.outputs.output-directory }}
           product-slug: ${{ steps.config.outputs.product-slug }}
           scopes: ${{ steps.config.outputs.scopes }}
