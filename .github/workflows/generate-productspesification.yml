@@ -48,6 +48,9 @@ jobs:
         id: config
         env:
           CONFIG_PATH: ${{ matrix.config_path }}
+          # Gir config-steget tilgang til alle secrets, så per-scope
+          # username_secret/password_secret kan resolves til verdier.
+          SECRETS_JSON: ${{ toJSON(secrets) }}
         run: |
           python - <<'PY'
           import os
@@ -185,6 +188,24 @@ jobs:
                   if item.strip()
               ]
 
+          # Per-scope pålogging: bytt secret-NAVN med secret-VERDI fra SECRETS_JSON,
+          # og fjern navnene før scopene sendes videre til action-en.
+          import json
+
+          try:
+              secrets_json = json.loads(os.environ.get("SECRETS_JSON") or "{}")
+          except json.JSONDecodeError:
+              secrets_json = {}
+          # Secret-navn er case-uavhengige i GitHub — slå opp case-insensitivt.
+          secrets_ci = {k.upper(): v for k, v in secrets_json.items()}
+          for scope in scopes:
+              user_secret = scope.pop("username_secret", None)
+              pass_secret = scope.pop("password_secret", None)
+              if user_secret and secrets_ci.get(user_secret.upper()):
+                  scope["username"] = secrets_ci[user_secret.upper()]
+              if pass_secret and secrets_ci.get(pass_secret.upper()):
+                  scope["password"] = secrets_ci[pass_secret.upper()]
+
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as gh_out:
               for source, dest in required_map.items():
                   if values.get(source):
@@ -200,7 +221,6 @@ jobs:
                       + "\n"
                   )
               if scopes:
-                  import json
                   gh_out.write("scopes=" + json.dumps(scopes) + "\n")
           PY
 
@@ -210,6 +230,8 @@ jobs:
           feature-type-filter: ${{ steps.config.outputs.feature-type-filter }}
           metadata-id: ${{ steps.config.outputs.metadata-id }}
           ogc-feature-api: ${{ steps.config.outputs.ogc-feature-api }}
+          # Global fallback for det globale ogc_feature_api-feltet / scopes uten
+          # egne secrets. Per-scope credentials overstyrer disse i action-en.
           ogc-username: ${{ secrets.CLIENTID }}
           ogc-password: ${{ secrets.CLIENTKEY }}
           output-directory: ${{ steps.config.outputs.output-directory }}
