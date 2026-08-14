@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dyrkbarjord="https://skjema.geonorge.no/SOSI/produktspesifikasjon/dyrkbar-jord/dyrkbar-jord/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified" targetNamespace="https://skjema.geonorge.no/SOSI/produktspesifikasjon/dyrkbar-jord/dyrkbar-jord/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Dyrkbar jord" substitutionGroup="gml:AbstractFeature" type="dyrkbarjord:Dyrkbar jordType"/>
+  <complexType name="Dyrkbar jordType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:SurfacePropertyType"/>
+          <element minOccurs="0" name="lokalId" type="integer"/>
+          <element minOccurs="0" name="dyrkbarJord" type="integer"/>
+          <element minOccurs="0" name="myrTorv" type="integer"/>
+          <element minOccurs="0" name="verneform" type="string"/>
+          <element minOccurs="0" name="planeringsjord" type="integer"/>
+          <element minOccurs="0" name="fulldyrka2008" type="integer"/>
+          <element minOccurs="0" name="årsversjon" type="integer"/>
+          <element minOccurs="0" name="informasjon" type="string"/>
+          <element minOccurs="0" name="områdeId" type="integer"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="Dyrkbar jordPropertyType">
+    <sequence minOccurs="0">
+      <element ref="dyrkbarjord:Dyrkbar jord"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
