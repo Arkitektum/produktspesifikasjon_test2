@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "featureTypes": {
+    "utbredelse_ovrig": {
+      "attributes": {
+        "objectid": {
+          "description": "id fgfghfg"
+        }
+      }
+    }
+  }
+}
