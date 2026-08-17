@@ -45,7 +45,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Definisjon:</th>
-      <td>integer</td>
+      <td>id fgfghfg</td>
     </tr>
     <tr>
       <th scope="row">Multiplisitet:</th>
