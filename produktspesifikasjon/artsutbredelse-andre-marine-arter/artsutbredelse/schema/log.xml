@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><ShapeChangeResult xmlns="http://www.interactive-instruments.de/ShapeChange/Result" xmlns:r="http://www.interactive-instruments.de/ShapeChange/Result" config="/home/runner/work/produktspesifikasjon_test2/produktspesifikasjon_test2/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/schema/shapechange-config.xml" end="Mon Aug 17 13:21:07 UTC 2026" resultCode="0" start="Mon Aug 17 13:20:59 UTC 2026" version="4.0.0">
+  <Messages>
+    <ProcessFlowInfo message="---------- Semantic validation of ShapeChange configuration: START ----------"/>
+    <Info message="Validating input parameters."/>
+    <Info message="Validation of input parameters completed."/>
+    <Info message="Validating log parameters."/>
+    <Info message="Validation of log parameters completed."/>
+    <ProcessFlowInfo message="--- Validating target with @class 'de.interactive_instruments.shapechange.core.target.xmlschema.XmlSchema' and @inputs 'INPUT' ..."/>
+    <ProcessFlowInfo message="--- Validating target with @class 'de.interactive_instruments.shapechange.core.target.json.JsonSchemaTarget' and @inputs 'INPUT' ..."/>
+    <ProcessFlowInfo message="---------- Semantic validation of ShapeChange configuration: COMPLETE ----------"/>
+    <ProcessFlowInfo message="Application schema found, package name: 'artsutbredelse', target namespace: 'https://skjema.geonorge.no/SOSI/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/1.0'"/>
+    <ProcessFlowInfo message="Now processing target 'XML Schema' for input 'INPUT'."/>
+    <ProcessFlowInfo message="Executed target class 'de.interactive_instruments.shapechange.core.target.xmlschema.XmlSchema' for input ID: 'INPUT'.&#10;-------------------------------------------------"/>
+    <ProcessFlowInfo message="Application schema found, package name: 'artsutbredelse', target namespace: 'https://skjema.geonorge.no/SOSI/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/1.0'"/>
+    <ProcessFlowInfo message="Now processing target 'JSON Schema' for input 'INPUT'."/>
+    <ProcessFlowInfo message="Executed target class 'de.interactive_instruments.shapechange.core.target.json.JsonSchemaTarget' for input ID: 'INPUT'.&#10;-------------------------------------------------"/>
+  </Messages>
+  <Results>
+    <Result href="file:/home/runner/work/produktspesifikasjon_test2/produktspesifikasjon_test2/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/schema/xsd/INPUT/artsutbredelse.xsd" scope="https://skjema.geonorge.no/SOSI/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/1.0" target="XML Schema">artsutbredelse.xsd</Result>
+    <Result href="file:/home/runner/work/produktspesifikasjon_test2/produktspesifikasjon_test2/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/schema/jsonschema/INPUT/artsutbredelse/artsutbredelse.json" target="JSON Schema">artsutbredelse.json</Result>
+  </Results>
+</ShapeChangeResult>

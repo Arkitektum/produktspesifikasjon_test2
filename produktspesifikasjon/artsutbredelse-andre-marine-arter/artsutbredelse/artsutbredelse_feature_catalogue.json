@@ -16,7 +16,7 @@
         "name": "objectid",
         "type": "integer",
         "cardinality": "0..1",
-        "description": "integer"
+        "description": "id fgfghfg"
       },
       {
         "name": "geoserver_",

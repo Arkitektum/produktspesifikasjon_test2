@@ -1,0 +1,102 @@
+{
+  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://skjema.geonorge.no/SOSI/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/artsutbredelse/artsutbredelse.json",
+  "definitions": {
+    "utbredelse_ovrig": {
+      "type": "object",
+      "properties": {
+        "geometry": {
+          "$ref": "https://geojson.org/schema/MultiPolygon.json"
+        },
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "objectid": {
+          "type": "integer"
+        },
+        "geoserver_": {
+          "type": "string"
+        },
+        "animal_gro": {
+          "type": "string"
+        },
+        "species_no": {
+          "type": "string"
+        },
+        "wms_code": {
+          "type": "string"
+        },
+        "map_type_n": {
+          "type": "string"
+        },
+        "map_type_i": {
+          "type": "string"
+        },
+        "info_no": {
+          "type": "string"
+        },
+        "ecosystem_": {
+          "type": "string"
+        },
+        "stock_no": {
+          "type": "string"
+        },
+        "reference": {
+          "type": "string"
+        },
+        "source_no": {
+          "type": "string"
+        },
+        "species_la": {
+          "type": "string"
+        },
+        "species_en": {
+          "type": "string"
+        },
+        "map_type_e": {
+          "type": "string"
+        },
+        "info_en": {
+          "type": "string"
+        },
+        "stock_en": {
+          "type": "string"
+        },
+        "source_en": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "update": {
+          "type": "string",
+          "format": "date"
+        },
+        "start_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "end_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "start_mmdd": {
+          "type": "string"
+        },
+        "end_mmdd": {
+          "type": "string"
+        },
+        "sort_nmb": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type"
+      ]
+    }
+  }
+}
