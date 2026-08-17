@@ -1,0 +1,100 @@
+# Open Data Contract Standard (ODCS) v3.1.0 — generert fra datamodellen.
+apiVersion: v3.1.0
+kind: DataContract
+id: urn:odcs:artsutbredelse-andre-marine-arter-artsutbredelse:1.0.0
+version: 1.0.0
+status: active
+name: Artsutbredelse andre marine arter - Artsutbredelse
+schema:
+- name: utbredelse_ovrig
+  physicalName: utbredelse_ovrig
+  logicalType: object
+  physicalType: table
+  description: Havforskninginstituttets artsutbredelseskart for øvrige arter, som
+    ikke er i kategoriene fisk eller sjøpattedyr, sammenslått i èn fil.
+  customProperties:
+  - property: sosiObjektType
+    value: utbredelse_ovrig
+  properties:
+  - name: geometri
+    logicalType: object
+    physicalType: geometry(MultiPolygon)
+    required: true
+    customProperties:
+    - property: geometryType
+      value: MultiPolygon
+  - name: objectid
+    logicalType: integer
+    description: id fgfghfg
+  - name: geoserver_
+    logicalType: string
+    description: string
+  - name: animal_gro
+    logicalType: string
+    description: string
+  - name: species_no
+    logicalType: string
+    description: string
+  - name: wms_code
+    logicalType: string
+    description: string
+  - name: map_type_n
+    logicalType: string
+    description: string
+  - name: map_type_i
+    logicalType: string
+    description: string
+  - name: info_no
+    logicalType: string
+    description: string
+  - name: ecosystem_
+    logicalType: string
+    description: string
+  - name: stock_no
+    logicalType: string
+    description: string
+  - name: reference
+    logicalType: string
+    description: string
+  - name: source_no
+    logicalType: string
+    description: string
+  - name: species_la
+    logicalType: string
+    description: string
+  - name: species_en
+    logicalType: string
+    description: string
+  - name: map_type_e
+    logicalType: string
+    description: string
+  - name: info_en
+    logicalType: string
+    description: string
+  - name: stock_en
+    logicalType: string
+    description: string
+  - name: source_en
+    logicalType: string
+    description: string
+  - name: url
+    logicalType: string
+    description: string
+  - name: update
+    logicalType: string
+    description: Date
+  - name: start_date
+    logicalType: string
+    description: Date
+  - name: end_date
+    logicalType: string
+    description: Date
+  - name: start_mmdd
+    logicalType: string
+    description: string
+  - name: end_mmdd
+    logicalType: string
+    description: string
+  - name: sort_nmb
+    logicalType: string
+    description: string
