@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:grunnundersokelserutvidet="https://skjema.geonorge.no/SOSI/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.geonorge.no/SOSI/produktspesifikasjon/nasjonal-database-for-grunnundersokelser-nadag/grunnundersokelser-utvidet/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="BorlengdeTilBerg" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:BorlengdeTilBergType"/>
+  <complexType name="BorlengdeTilBergType">
+    <sequence>
+      <element minOccurs="0" name="borlengdeKvalitet" type="string"/>
+      <element minOccurs="0" name="borlengdeTilBerg" type="double"/>
+    </sequence>
+  </complexType>
+  <complexType name="BorlengdeTilBergPropertyType">
+    <sequence>
+      <element ref="grunnundersokelserutvidet:BorlengdeTilBerg"/>
+    </sequence>
+  </complexType>
+  <element name="EksternIdentifikasjon" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:EksternIdentifikasjonType"/>
+  <complexType name="EksternIdentifikasjonType">
+    <sequence>
+      <element minOccurs="0" name="eksternId" type="string"/>
+      <element minOccurs="0" name="eksternNavnerom" type="string"/>
+      <element minOccurs="0" name="eksternVersjonId" type="string"/>
+      <element minOccurs="0" name="eksternLeveringDato" type="dateTime"/>
+    </sequence>
+  </complexType>
+  <complexType name="EksternIdentifikasjonPropertyType">
+    <sequence>
+      <element ref="grunnundersokelserutvidet:EksternIdentifikasjon"/>
+    </sequence>
+  </complexType>
+  <element name="Identifikasjon" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:IdentifikasjonType"/>
+  <complexType name="IdentifikasjonType">
+    <sequence>
+      <element minOccurs="0" name="lokalId" type="string"/>
+      <element minOccurs="0" name="navnerom" type="string"/>
+      <element minOccurs="0" name="versjonId" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="IdentifikasjonPropertyType">
+    <sequence>
+      <element ref="grunnundersokelserutvidet:Identifikasjon"/>
+    </sequence>
+  </complexType>
+  <element name="Link" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:LinkType"/>
+  <complexType name="LinkType">
+    <sequence>
+      <element minOccurs="0" name="href"/>
+      <element minOccurs="0" name="rel" type="string"/>
+      <element minOccurs="0" name="type" type="string"/>
+      <element minOccurs="0" name="title" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="LinkPropertyType">
+    <sequence>
+      <element ref="grunnundersokelserutvidet:Link"/>
+    </sequence>
+  </complexType>
+  <element name="PosisjonskvalitetNADAG" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:PosisjonskvalitetNADAGType"/>
+  <complexType name="PosisjonskvalitetNADAGType">
+    <sequence>
+      <element minOccurs="0" name="målemetode" type="string"/>
+      <element minOccurs="0" name="målemetodeHøyde" type="string"/>
+      <element minOccurs="0" name="nøyaktighet" type="integer"/>
+      <element minOccurs="0" name="nøyaktighetHøyde" type="integer"/>
+    </sequence>
+  </complexType>
+  <complexType name="PosisjonskvalitetNADAGPropertyType">
+    <sequence>
+      <element ref="grunnundersokelserutvidet:PosisjonskvalitetNADAG"/>
+    </sequence>
+  </complexType>
+  <element name="array" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:arrayType"/>
+  <complexType name="arrayType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="title"/>
+    </sequence>
+  </complexType>
+  <complexType name="arrayPropertyType">
+    <sequence>
+      <element ref="grunnundersokelserutvidet:array"/>
+    </sequence>
+  </complexType>
+  <simpleType name="stringType">
+    <restriction base="string">
+      <enumeration value="10"/>
+      <enumeration value="11"/>
+      <enumeration value="12"/>
+      <enumeration value="13"/>
+      <enumeration value="14"/>
+      <enumeration value="15"/>
+      <enumeration value="18"/>
+      <enumeration value="19"/>
+      <enumeration value="20"/>
+      <enumeration value="21"/>
+      <enumeration value="22"/>
+      <enumeration value="23"/>
+      <enumeration value="24"/>
+      <enumeration value="30"/>
+      <enumeration value="31"/>
+      <enumeration value="32"/>
+      <enumeration value="33"/>
+      <enumeration value="34"/>
+      <enumeration value="35"/>
+      <enumeration value="36"/>
+      <enumeration value="40"/>
+      <enumeration value="41"/>
+      <enumeration value="42"/>
+      <enumeration value="43"/>
+      <enumeration value="44"/>
+      <enumeration value="45"/>
+      <enumeration value="46"/>
+      <enumeration value="50"/>
+      <enumeration value="51"/>
+      <enumeration value="52"/>
+      <enumeration value="53"/>
+      <enumeration value="54"/>
+      <enumeration value="55"/>
+      <enumeration value="56"/>
+      <enumeration value="60"/>
+      <enumeration value="61"/>
+      <enumeration value="62"/>
+      <enumeration value="63"/>
+      <enumeration value="64"/>
+      <enumeration value="65"/>
+      <enumeration value="66"/>
+      <enumeration value="67"/>
+      <enumeration value="68"/>
+      <enumeration value="69"/>
+      <enumeration value="70"/>
+      <enumeration value="71"/>
+      <enumeration value="72"/>
+      <enumeration value="73"/>
+      <enumeration value="74"/>
+      <enumeration value="77"/>
+      <enumeration value="78"/>
+      <enumeration value="79"/>
+      <enumeration value="80"/>
+      <enumeration value="81"/>
+      <enumeration value="82"/>
+      <enumeration value="90"/>
+      <enumeration value="91"/>
+      <enumeration value="92"/>
+      <enumeration value="93"/>
+      <enumeration value="94"/>
+      <enumeration value="95"/>
+      <enumeration value="96"/>
+      <enumeration value="97"/>
+      <enumeration value="99"/>
+      <enumeration value="1"/>
+      <enumeration value="2"/>
+      <enumeration value="0"/>
+      <enumeration value="88"/>
+      <enumeration value="89"/>
+      <enumeration value="98"/>
+      <enumeration value="Antatt"/>
+      <enumeration value="AntattIkkeKvikk"/>
+      <enumeration value="IkkeVurdert"/>
+      <enumeration value="Sikker"/>
+      <enumeration value="Usikker"/>
+      <enumeration value="16"/>
+      <enumeration value="17"/>
+      <enumeration value="25"/>
+      <enumeration value="26"/>
+      <enumeration value="27"/>
+      <enumeration value="28"/>
+      <enumeration value="29"/>
+      <enumeration value="3"/>
+      <enumeration value="37"/>
+      <enumeration value="38"/>
+      <enumeration value="39"/>
+      <enumeration value="4"/>
+      <enumeration value="47"/>
+      <enumeration value="48"/>
+      <enumeration value="49"/>
+      <enumeration value="5"/>
+      <enumeration value="6"/>
+      <enumeration value="7"/>
+      <enumeration value="8"/>
+      <enumeration value="9"/>
+      <enumeration value="57"/>
+      <enumeration value="58"/>
+      <enumeration value="59"/>
+      <enumeration value="100"/>
+    </restriction>
+  </simpleType>
+</schema>
