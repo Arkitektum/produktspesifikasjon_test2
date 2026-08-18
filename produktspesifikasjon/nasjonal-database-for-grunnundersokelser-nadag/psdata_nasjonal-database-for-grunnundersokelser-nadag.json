@@ -110,13 +110,6 @@
         "level": "dataset",
         "levelDescription": "OGC API-Features fra Norges geologiske undersøkelse"
       }
-    },
-    {
-      "specificationScope": {
-        "scopeIdentification": "Grunnundersokelser_utvidet",
-        "level": "dataset",
-        "levelDescription": "OGC API-Features fra Norges geologiske undersøkelse"
-      }
     }
   ],
   "referenceSystemSection": {
@@ -284,7 +277,7 @@
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-08-10",
+    "metadataDate": "2026-08-17",
     "language": "nor",
     "contact": {
       "organizationName": "Norges geologiske undersøkelse",

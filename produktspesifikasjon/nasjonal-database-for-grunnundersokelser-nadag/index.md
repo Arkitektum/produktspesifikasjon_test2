@@ -89,25 +89,9 @@ Fra og med 2025 er det lovfestet plikt for innmelding av geotekniske grunnunders
 
 **Nivåbeskrivelse**: OGC API-Features fra Norges geologiske undersøkelse
 
-### Grunnundersokelser_utvidet
-
-**Nivå**: dataset
-
-**Nivåbeskrivelse**: OGC API-Features fra Norges geologiske undersøkelse
-
 ## Datainnhold og struktur
 
 
-
-### Datamodell - Grunnundersokelser_utvidet
-
-
-
-<a href="grunnundersokelser-utvidet/grunnundersokelser-utvidet_feature_catalogue.png" title="Klikk for stor visning"><img src="grunnundersokelser-utvidet/grunnundersokelser-utvidet_feature_catalogue.png" alt="Datamodell Grunnundersokelser_utvidet" style="max-width: 100%; height: auto;" /></a>
-
-
-
-➡️ [Se full datamodell for omfang "Grunnundersokelser_utvidet" (diagram per pakke og objektkatalog)](grunnundersokelser-utvidet/objektkatalog.html)
 
 ### Datamodell - Grunnundersokelser_utvidet
 
@@ -179,7 +163,7 @@ Beskriv prosessen for å holde data oppdatert.
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-08-10
+**Metadatadato**: 2026-08-17
 
 **språk**: nor
 
