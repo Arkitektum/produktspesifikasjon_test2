@@ -1,0 +1,52 @@
+# Open Data Contract Standard (ODCS) v3.1.0 — generert fra datamodellen.
+apiVersion: v3.1.0
+kind: DataContract
+id: urn:odcs:dyrkbar-jord-dyrkbar-jord:1.0.0
+version: 1.0.0
+status: active
+name: Dyrkbar jord - Dyrkbar jord
+schema:
+- name: Dyrkbar jord
+  physicalName: dyrkbar_jord
+  logicalType: object
+  physicalType: table
+  customProperties:
+  - property: sosiObjektType
+    value: Dyrkbar jord
+  - property: defaultCrs
+    value: EPSG:4258
+  properties:
+  - name: geometri
+    logicalType: object
+    physicalType: geometry(Polygon,4258)
+    required: true
+    customProperties:
+    - property: geometryType
+      value: Polygon
+    - property: crs
+      value: EPSG:4258
+  - name: lokalId
+    logicalType: integer
+    primaryKey: true
+  - name: dyrkbarJord
+    logicalType: integer
+    description: dyrkbarJord
+  - name: myrTorv
+    logicalType: integer
+    description: myrTorv
+  - name: verneform
+    logicalType: string
+    description: verneform
+  - name: planeringsjord
+    logicalType: integer
+    description: planeringsjord
+  - name: fulldyrka2008
+    logicalType: integer
+    description: fulldyrka2008
+  - name: årsversjon
+    logicalType: integer
+  - name: informasjon
+    logicalType: string
+  - name: områdeId
+    logicalType: integer
+    description: områdeId
