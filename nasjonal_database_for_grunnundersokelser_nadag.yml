@@ -2,6 +2,7 @@ metadataId: bf45a463-434d-4b4d-84dc-9325780ab5fb
 output_directory: produktspesifikasjon
 product_slug: nasjonal_database_for_grunnundersokelser_nadag
 updated: '2026-08-11'
+outputs: geopackage,xsd,jsonschema,odcs
 scopes:
 - name: Grunnundersokelser_utvidet
   url: https://geo.ngu.no/api/features/grunnundersokelser_utvidet
