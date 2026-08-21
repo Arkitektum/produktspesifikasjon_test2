@@ -1,37 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:artsutbredelse="https://skjema.geonorge.no/SOSI/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" elementFormDefault="qualified" targetNamespace="https://skjema.geonorge.no/SOSI/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/1.0" version="1.0">
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
-  <element name="utbredelse_ovrig" substitutionGroup="gml:AbstractFeature" type="artsutbredelse:utbredelse_ovrigType"/>
+  <element name="utbredelse_ovrig" substitutionGroup="gml:AbstractFeature" type="artsutbredelse:utbredelse_ovrigType">
+    <annotation>
+      <documentation>Havforskninginstituttets artsutbredelseskart for øvrige arter, som ikke er i kategoriene fisk eller sjøpattedyr, sammenslått i èn fil.</documentation>
+    </annotation>
+  </element>
   <complexType name="utbredelse_ovrigType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="geometry" type="gml:MultiSurfacePropertyType"/>
-          <element minOccurs="0" name="objectid" type="integer"/>
-          <element minOccurs="0" name="geoserver_" type="string"/>
-          <element minOccurs="0" name="animal_gro" type="string"/>
-          <element minOccurs="0" name="species_no" type="string"/>
-          <element minOccurs="0" name="wms_code" type="string"/>
-          <element minOccurs="0" name="map_type_n" type="string"/>
-          <element minOccurs="0" name="map_type_i" type="string"/>
-          <element minOccurs="0" name="info_no" type="string"/>
-          <element minOccurs="0" name="ecosystem_" type="string"/>
-          <element minOccurs="0" name="stock_no" type="string"/>
-          <element minOccurs="0" name="reference" type="string"/>
-          <element minOccurs="0" name="source_no" type="string"/>
-          <element minOccurs="0" name="species_la" type="string"/>
-          <element minOccurs="0" name="species_en" type="string"/>
-          <element minOccurs="0" name="map_type_e" type="string"/>
-          <element minOccurs="0" name="info_en" type="string"/>
-          <element minOccurs="0" name="stock_en" type="string"/>
-          <element minOccurs="0" name="source_en" type="string"/>
-          <element minOccurs="0" name="url" type="string"/>
-          <element minOccurs="0" name="update" type="date"/>
-          <element minOccurs="0" name="start_date" type="date"/>
-          <element minOccurs="0" name="end_date" type="date"/>
-          <element minOccurs="0" name="start_mmdd" type="string"/>
-          <element minOccurs="0" name="end_mmdd" type="string"/>
-          <element minOccurs="0" name="sort_nmb" type="string"/>
+          <element minOccurs="0" name="objectid" type="integer">
+            <annotation>
+              <documentation>id fgfghfg</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geoserver_" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="animal_gro" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="species_no" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="wms_code" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="map_type_n" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="map_type_i" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="info_no" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="ecosystem_" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="stock_no" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="reference" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="source_no" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="species_la" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="species_en" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="map_type_e" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="info_en" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="stock_en" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="source_en" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="url" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="update" type="date">
+            <annotation>
+              <documentation>Date</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="start_date" type="date">
+            <annotation>
+              <documentation>Date</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="end_date" type="date">
+            <annotation>
+              <documentation>Date</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="start_mmdd" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="end_mmdd" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="sort_nmb" type="string">
+            <annotation>
+              <documentation>string</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>

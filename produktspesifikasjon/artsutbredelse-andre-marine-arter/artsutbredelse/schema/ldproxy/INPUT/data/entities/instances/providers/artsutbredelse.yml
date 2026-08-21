@@ -1,0 +1,112 @@
+---
+id: artsutbredelse
+enabled: true
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25833
+  forceAxisOrder: NONE
+nativeTimeZone: Europe/Oslo
+connectionInfo:
+  database: FIXME
+  host: FIXME
+  user: FIXME
+  password: FIXME-base64-encoded
+  schemas:
+  - public
+sourcePathDefaults:
+  primaryKey: objid
+  sortKey: objid
+types:
+  utbredelse_ovrig:
+    sourcePath: /utbredelse_ovrig
+    type: OBJECT
+    objectType: utbredelse_ovrig
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      geometry:
+        sourcePath: geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+        constraints:
+          required: true
+      objectid:
+        sourcePath: objectid
+        type: INTEGER
+      geoserver_:
+        sourcePath: geoserver_
+        type: STRING
+      animal_gro:
+        sourcePath: animal_gro
+        type: STRING
+      species_no:
+        sourcePath: species_no
+        type: STRING
+      wms_code:
+        sourcePath: wms_code
+        type: STRING
+      map_type_n:
+        sourcePath: map_type_n
+        type: STRING
+      map_type_i:
+        sourcePath: map_type_i
+        type: STRING
+      info_no:
+        sourcePath: info_no
+        type: STRING
+      ecosystem_:
+        sourcePath: ecosystem_
+        type: STRING
+      stock_no:
+        sourcePath: stock_no
+        type: STRING
+      reference:
+        sourcePath: reference
+        type: STRING
+      source_no:
+        sourcePath: source_no
+        type: STRING
+      species_la:
+        sourcePath: species_la
+        type: STRING
+      species_en:
+        sourcePath: species_en
+        type: STRING
+      map_type_e:
+        sourcePath: map_type_e
+        type: STRING
+      info_en:
+        sourcePath: info_en
+        type: STRING
+      stock_en:
+        sourcePath: stock_en
+        type: STRING
+      source_en:
+        sourcePath: source_en
+        type: STRING
+      url:
+        sourcePath: url
+        type: STRING
+      update:
+        sourcePath: update
+        type: DATE
+        role: PRIMARY_INSTANT
+      start_date:
+        sourcePath: start_date
+        type: DATE
+      end_date:
+        sourcePath: end_date
+        type: DATE
+      start_mmdd:
+        sourcePath: start_mmdd
+        type: STRING
+      end_mmdd:
+        sourcePath: end_mmdd
+        type: STRING
+      sort_nmb:
+        sourcePath: sort_nmb
+        type: STRING

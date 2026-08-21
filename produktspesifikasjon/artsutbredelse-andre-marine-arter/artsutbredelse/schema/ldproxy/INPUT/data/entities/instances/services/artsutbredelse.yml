@@ -1,0 +1,11 @@
+---
+id: artsutbredelse
+label: FIXME
+description: FIXME
+enabled: true
+serviceType: OGC_API
+collections:
+  utbredelse_ovrig:
+    id: utbredelse_ovrig
+    label: utbredelse_ovrig
+    enabled: true
