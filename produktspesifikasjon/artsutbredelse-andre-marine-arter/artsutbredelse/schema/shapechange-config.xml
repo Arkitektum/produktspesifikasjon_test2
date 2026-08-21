@@ -20,6 +20,8 @@
    <targetParameter name="outputDirectory" value="/home/runner/work/produktspesifikasjon_test2/produktspesifikasjon_test2/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/schema/xsd" />
    <targetParameter name="sortedOutput" value="true" />
    <targetParameter name="defaultEncodingRule" value="sosi" />
+   <targetParameter name="documentationTemplate" value="[[documentation]]" />
+   <targetParameter name="documentationNoValue" value="" />
    <rules>
     <EncodingRule name="sosi" extends="iso19136_2007">
      <rule name="rule-xsd-prop-length-size-pattern" />
@@ -42,6 +44,8 @@
    <targetParameter name="jsonBaseUri" value="https://skjema.geonorge.no/SOSI/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse" />
    <targetParameter name="entityTypeName" value="@type" />
    <targetParameter name="defaultEncodingRule" value="sosiJson" />
+   <targetParameter name="documentationTemplate" value="[[documentation]]" />
+   <targetParameter name="documentationNoValue" value="" />
    <rules>
     <EncodingRule name="sosiJson">
      <rule name="rule-json-cls-basictype" />
@@ -61,6 +65,21 @@
     <MapEntry type="Sverm" rule="*" targetType="https://geojson.org/schema/MultiPoint.json" param="geometry" />
    </mapEntries>
    <xi:include href="https://shapechange.net/resources/config/StandardMapEntries_JSON.xml" />
+  </Target>
+  <Target class="de.interactive_instruments.shapechange.core.target.ldproxy2.Ldproxy2Target" mode="enabled" inputs="INPUT">
+   <targetParameter name="outputDirectory" value="/home/runner/work/produktspesifikasjon_test2/produktspesifikasjon_test2/produktspesifikasjon/artsutbredelse-andre-marine-arter/artsutbredelse/schema/ldproxy" />
+   <targetParameter name="srid" value="25833" />
+   <targetParameter name="primaryKeyColumn" value="objid" />
+   <targetParameter name="nativeTimeZone" value="Europe/Oslo" />
+   <targetParameter name="defaultEncodingRule" value="ldproxy2" />
+   <targetParameter name="documentationTemplate" value="[[documentation]]" />
+   <targetParameter name="documentationNoValue" value="" />
+   <rules>
+    <EncodingRule name="ldproxy2" extends="*">
+     <rule name="rule-ldp2-all-associativeTablesWithSeparatePkField" />
+    </EncodingRule>
+   </rules>
+   <xi:include href="https://shapechange.net/resources/config/StandardMapEntries_Ldproxy2.xml" />
   </Target>
  </targets>
 </ShapeChangeConfiguration>
