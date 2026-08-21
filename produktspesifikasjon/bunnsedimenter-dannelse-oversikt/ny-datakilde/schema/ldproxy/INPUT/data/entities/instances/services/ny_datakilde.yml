@@ -1,0 +1,27 @@
+---
+id: ny_datakilde
+label: FIXME
+description: FIXME
+enabled: true
+serviceType: OGC_API
+collections:
+  dataavgrensning:
+    id: dataavgrensning
+    label: dataavgrensning
+    enabled: true
+  fiktivdelelinje:
+    id: fiktivdelelinje
+    label: fiktivdelelinje
+    enabled: true
+  geolavgrlinje:
+    id: geolavgrlinje
+    label: geolavgrlinje
+    enabled: true
+  losmasseflate:
+    id: losmasseflate
+    label: losmasseflate
+    enabled: true
+  losmassegrense:
+    id: losmassegrense
+    label: losmassegrense
+    enabled: true
