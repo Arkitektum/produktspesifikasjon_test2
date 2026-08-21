@@ -665,169 +665,259 @@
        <sc:sequenceNumber>66</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>0</sc:name>
+       <sc:name>5776</sc:name>
        <sc:id>C7_67</sc:id>
        <sc:sequenceNumber>67</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>88</sc:name>
+       <sc:name>5941</sc:name>
        <sc:id>C7_68</sc:id>
        <sc:sequenceNumber>68</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>89</sc:name>
+       <sc:name>Ukjent</sc:name>
        <sc:id>C7_69</sc:id>
        <sc:sequenceNumber>69</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>98</sc:name>
+       <sc:name>0</sc:name>
        <sc:id>C7_70</sc:id>
        <sc:sequenceNumber>70</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>Antatt</sc:name>
+       <sc:name>88</sc:name>
        <sc:id>C7_71</sc:id>
        <sc:sequenceNumber>71</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>AntattIkkeKvikk</sc:name>
+       <sc:name>89</sc:name>
        <sc:id>C7_72</sc:id>
        <sc:sequenceNumber>72</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>IkkeVurdert</sc:name>
+       <sc:name>98</sc:name>
        <sc:id>C7_73</sc:id>
        <sc:sequenceNumber>73</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>Sikker</sc:name>
+       <sc:name>Antatt</sc:name>
        <sc:id>C7_74</sc:id>
        <sc:sequenceNumber>74</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>Usikker</sc:name>
+       <sc:name>AntattIkkeKvikk</sc:name>
        <sc:id>C7_75</sc:id>
        <sc:sequenceNumber>75</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>16</sc:name>
+       <sc:name>IkkeVurdert</sc:name>
        <sc:id>C7_76</sc:id>
        <sc:sequenceNumber>76</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>17</sc:name>
+       <sc:name>Sikker</sc:name>
        <sc:id>C7_77</sc:id>
        <sc:sequenceNumber>77</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>25</sc:name>
+       <sc:name>Usikker</sc:name>
        <sc:id>C7_78</sc:id>
        <sc:sequenceNumber>78</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>26</sc:name>
+       <sc:name>16</sc:name>
        <sc:id>C7_79</sc:id>
        <sc:sequenceNumber>79</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>27</sc:name>
+       <sc:name>17</sc:name>
        <sc:id>C7_80</sc:id>
        <sc:sequenceNumber>80</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>28</sc:name>
+       <sc:name>25</sc:name>
        <sc:id>C7_81</sc:id>
        <sc:sequenceNumber>81</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>29</sc:name>
+       <sc:name>26</sc:name>
        <sc:id>C7_82</sc:id>
        <sc:sequenceNumber>82</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>3</sc:name>
+       <sc:name>27</sc:name>
        <sc:id>C7_83</sc:id>
        <sc:sequenceNumber>83</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>37</sc:name>
+       <sc:name>28</sc:name>
        <sc:id>C7_84</sc:id>
        <sc:sequenceNumber>84</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>38</sc:name>
+       <sc:name>29</sc:name>
        <sc:id>C7_85</sc:id>
        <sc:sequenceNumber>85</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>39</sc:name>
+       <sc:name>3</sc:name>
        <sc:id>C7_86</sc:id>
        <sc:sequenceNumber>86</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>4</sc:name>
+       <sc:name>37</sc:name>
        <sc:id>C7_87</sc:id>
        <sc:sequenceNumber>87</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>47</sc:name>
+       <sc:name>38</sc:name>
        <sc:id>C7_88</sc:id>
        <sc:sequenceNumber>88</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>48</sc:name>
+       <sc:name>39</sc:name>
        <sc:id>C7_89</sc:id>
        <sc:sequenceNumber>89</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>49</sc:name>
+       <sc:name>4</sc:name>
        <sc:id>C7_90</sc:id>
        <sc:sequenceNumber>90</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>5</sc:name>
+       <sc:name>47</sc:name>
        <sc:id>C7_91</sc:id>
        <sc:sequenceNumber>91</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>6</sc:name>
+       <sc:name>48</sc:name>
        <sc:id>C7_92</sc:id>
        <sc:sequenceNumber>92</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>7</sc:name>
+       <sc:name>49</sc:name>
        <sc:id>C7_93</sc:id>
        <sc:sequenceNumber>93</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>8</sc:name>
+       <sc:name>5</sc:name>
        <sc:id>C7_94</sc:id>
        <sc:sequenceNumber>94</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>9</sc:name>
+       <sc:name>6</sc:name>
        <sc:id>C7_95</sc:id>
        <sc:sequenceNumber>95</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>57</sc:name>
+       <sc:name>7</sc:name>
        <sc:id>C7_96</sc:id>
        <sc:sequenceNumber>96</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>58</sc:name>
+       <sc:name>8</sc:name>
        <sc:id>C7_97</sc:id>
        <sc:sequenceNumber>97</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>59</sc:name>
+       <sc:name>9</sc:name>
        <sc:id>C7_98</sc:id>
        <sc:sequenceNumber>98</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>100</sc:name>
+       <sc:name>AssessmentReport</sc:name>
        <sc:id>C7_99</sc:id>
        <sc:sequenceNumber>99</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>BoreHoleAttachment</sc:name>
+       <sc:id>C7_100</sc:id>
+       <sc:sequenceNumber>100</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>DigitizedDwg</sc:name>
+       <sc:id>C7_101</sc:id>
+       <sc:sequenceNumber>101</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>DigitizedImage</sc:name>
+       <sc:id>C7_102</sc:id>
+       <sc:sequenceNumber>102</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>Drawing</sc:name>
+       <sc:id>C7_103</sc:id>
+       <sc:sequenceNumber>103</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>GeoReport</sc:name>
+       <sc:id>C7_104</sc:id>
+       <sc:sequenceNumber>104</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>Image</sc:name>
+       <sc:id>C7_105</sc:id>
+       <sc:sequenceNumber>105</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>LabReport</sc:name>
+       <sc:id>C7_106</sc:id>
+       <sc:sequenceNumber>106</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>Model</sc:name>
+       <sc:id>C7_107</sc:id>
+       <sc:sequenceNumber>107</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>NotSpecified</sc:name>
+       <sc:id>C7_108</sc:id>
+       <sc:sequenceNumber>108</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>PlanPdf</sc:name>
+       <sc:id>C7_109</sc:id>
+       <sc:sequenceNumber>109</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>PlanSymbolImage</sc:name>
+       <sc:id>C7_110</sc:id>
+       <sc:sequenceNumber>110</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>ProfileImage</sc:name>
+       <sc:id>C7_111</sc:id>
+       <sc:sequenceNumber>111</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>ProfilePdf</sc:name>
+       <sc:id>C7_112</sc:id>
+       <sc:sequenceNumber>112</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>RawdataFile</sc:name>
+       <sc:id>C7_113</sc:id>
+       <sc:sequenceNumber>113</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>57</sc:name>
+       <sc:id>C7_114</sc:id>
+       <sc:sequenceNumber>114</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>58</sc:name>
+       <sc:id>C7_115</sc:id>
+       <sc:sequenceNumber>115</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>59</sc:name>
+       <sc:id>C7_116</sc:id>
+       <sc:sequenceNumber>116</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>100</sc:name>
+       <sc:id>C7_117</sc:id>
+       <sc:sequenceNumber>117</sc:sequenceNumber>
       </sc:Property>
      </sc:properties>
     </sc:Class>

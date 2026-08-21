@@ -160,6 +160,7 @@ package "Objekttyper" {
     + forboringMetode [0..1] : CharacterString
     + stoppKode [0..1] : CharacterString
     + forboretStartLengde [0..1] : Real
+    + underspkt_fk [0..1] : CharacterString
     + undersPkt [0..1] : Link
     + metode-DynamiskSondering [0..*] : Sequence
     + metode-GeotekniskPrøveserie [0..*] : Sequence

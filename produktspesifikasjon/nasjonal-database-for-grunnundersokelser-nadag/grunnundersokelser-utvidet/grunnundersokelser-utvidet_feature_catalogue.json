@@ -616,7 +616,24 @@
         "name": "høydeReferanse",
         "type": "string",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "undersøkelseNr",
@@ -1643,7 +1660,24 @@
         "name": "høydeReferanse",
         "type": "string",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "opprettetDato",
@@ -2438,7 +2472,24 @@
         "name": "høydeReferanse",
         "type": "string",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "undersøkelseNr",
@@ -2792,6 +2843,12 @@
         "description": "Startlengde[m] for hvor forboring startet i en borhullundersøkelse <br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">Start depth[m] where the predrilling in the  borehole investigation started<br/><engelsk style=\\\"font-style:italic;font-size:smaller\\\">"
       },
       {
+        "name": "underspkt_fk",
+        "type": "string",
+        "cardinality": "0..1",
+        "description": "Fremmednøkkel til geoteknisk borehull."
+      },
+      {
         "name": "undersPkt",
         "type": "Link",
         "cardinality": "0..1",
@@ -2894,7 +2951,72 @@
         "name": "dokumentType",
         "type": "string",
         "cardinality": "1..1",
-        "description": "Type dokument. Feks. Geoteknisk rapport, Profilbilde"
+        "description": "Type dokument. Feks. Geoteknisk rapport, Profilbilde",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "AssessmentReport",
+              "label": "AssessmentReport"
+            },
+            {
+              "value": "BoreHoleAttachment",
+              "label": "BoreHoleAttachment"
+            },
+            {
+              "value": "DigitizedDwg",
+              "label": "DigitizedDwg"
+            },
+            {
+              "value": "DigitizedImage",
+              "label": "DigitizedImage"
+            },
+            {
+              "value": "Drawing",
+              "label": "Drawing"
+            },
+            {
+              "value": "GeoReport",
+              "label": "GeoReport"
+            },
+            {
+              "value": "Image",
+              "label": "Image"
+            },
+            {
+              "value": "LabReport",
+              "label": "LabReport"
+            },
+            {
+              "value": "Model",
+              "label": "Model"
+            },
+            {
+              "value": "NotSpecified",
+              "label": "NotSpecified"
+            },
+            {
+              "value": "PlanPdf",
+              "label": "PlanPdf"
+            },
+            {
+              "value": "PlanSymbolImage",
+              "label": "PlanSymbolImage"
+            },
+            {
+              "value": "ProfileImage",
+              "label": "ProfileImage"
+            },
+            {
+              "value": "ProfilePdf",
+              "label": "ProfilePdf"
+            },
+            {
+              "value": "RawdataFile",
+              "label": "RawdataFile"
+            }
+          ]
+        }
       },
       {
         "name": "dokumentFilnavn",
@@ -3312,7 +3434,24 @@
         "name": "høydeReferanse",
         "type": "string",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "feltundersNr",
@@ -4167,7 +4306,24 @@
         "name": "høydeReferanse",
         "type": "string",
         "cardinality": "0..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "tilhorertolketpunkt_fk",
@@ -4281,7 +4437,24 @@
         "name": "høydeReferanse",
         "type": "string",
         "cardinality": "1..1",
-        "description": "Referansesystem for høydeangivelse, som EPSG-kode."
+        "description": "Referansesystem for høydeangivelse, som EPSG-kode.",
+        "valueDomain": {
+          "type": "enumeration",
+          "listedValues": [
+            {
+              "value": "5776",
+              "label": "5776"
+            },
+            {
+              "value": "5941",
+              "label": "5941"
+            },
+            {
+              "value": "Ukjent",
+              "label": "Ukjent"
+            }
+          ]
+        }
       },
       {
         "name": "digitaliseringsmålestokk",

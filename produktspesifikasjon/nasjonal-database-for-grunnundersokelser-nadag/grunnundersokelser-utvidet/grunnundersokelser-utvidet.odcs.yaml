@@ -389,6 +389,17 @@ schema:
     description: Høyde for observasjon ved start observasjon [m]
   - name: høydeReferanse
     logicalType: string
+    logicalTypeOptions:
+      pattern: ^(5776|5941|Ukjent)$
+    customProperties:
+    - property: allowedValues
+      value:
+      - value: '5776'
+        label: '5776'
+      - value: '5941'
+        label: '5941'
+      - value: Ukjent
+        label: Ukjent
     description: Referansesystem for høydeangivelse, som EPSG-kode.
   - name: undersøkelseNr
     logicalType: string
@@ -1065,6 +1076,17 @@ schema:
     description: Terrenghøyde ved start borehull [m]
   - name: høydeReferanse
     logicalType: string
+    logicalTypeOptions:
+      pattern: ^(5776|5941|Ukjent)$
+    customProperties:
+    - property: allowedValues
+      value:
+      - value: '5776'
+        label: '5776'
+      - value: '5941'
+        label: '5941'
+      - value: Ukjent
+        label: Ukjent
     description: Referansesystem for høydeangivelse, som EPSG-kode.
   - name: opprettetDato
     logicalType: string
@@ -1564,6 +1586,17 @@ schema:
     description: Terrenghøyde ved start borehullsundersøkelse [m]
   - name: høydeReferanse
     logicalType: string
+    logicalTypeOptions:
+      pattern: ^(5776|5941|Ukjent)$
+    customProperties:
+    - property: allowedValues
+      value:
+      - value: '5776'
+        label: '5776'
+      - value: '5941'
+        label: '5941'
+      - value: Ukjent
+        label: Ukjent
     description: Referansesystem for høydeangivelse, som EPSG-kode.
   - name: undersøkelseNr
     logicalType: string
@@ -1764,6 +1797,9 @@ schema:
     description: Startlengde[m] for hvor forboring startet i en borhullundersøkelse
       <br/><engelsk style=\"font-style:italic;font-size:smaller\">Start depth[m] where
       the predrilling in the  borehole investigation started<br/><engelsk style=\"font-style:italic;font-size:smaller\">
+  - name: underspkt_fk
+    logicalType: string
+    description: Fremmednøkkel til geoteknisk borehull.
   - name: undersPkt
     logicalType: object
     properties:
@@ -1842,6 +1878,41 @@ schema:
     description: Benyttes til å angi nøkkelverdi ved kall til Web-api.
   - name: dokumentType
     logicalType: string
+    logicalTypeOptions:
+      pattern: ^(AssessmentReport|BoreHoleAttachment|DigitizedDwg|DigitizedImage|Drawing|GeoReport|Image|LabReport|Model|NotSpecified|PlanPdf|PlanSymbolImage|ProfileImage|ProfilePdf|RawdataFile)$
+    customProperties:
+    - property: allowedValues
+      value:
+      - value: AssessmentReport
+        label: AssessmentReport
+      - value: BoreHoleAttachment
+        label: BoreHoleAttachment
+      - value: DigitizedDwg
+        label: DigitizedDwg
+      - value: DigitizedImage
+        label: DigitizedImage
+      - value: Drawing
+        label: Drawing
+      - value: GeoReport
+        label: GeoReport
+      - value: Image
+        label: Image
+      - value: LabReport
+        label: LabReport
+      - value: Model
+        label: Model
+      - value: NotSpecified
+        label: NotSpecified
+      - value: PlanPdf
+        label: PlanPdf
+      - value: PlanSymbolImage
+        label: PlanSymbolImage
+      - value: ProfileImage
+        label: ProfileImage
+      - value: ProfilePdf
+        label: ProfilePdf
+      - value: RawdataFile
+        label: RawdataFile
     description: Type dokument. Feks. Geoteknisk rapport, Profilbilde
     required: true
   - name: dokumentFilnavn
@@ -2086,6 +2157,17 @@ schema:
     description: Terrenghøyde ved start feltundersøkelse [m]
   - name: høydeReferanse
     logicalType: string
+    logicalTypeOptions:
+      pattern: ^(5776|5941|Ukjent)$
+    customProperties:
+    - property: allowedValues
+      value:
+      - value: '5776'
+        label: '5776'
+      - value: '5941'
+        label: '5941'
+      - value: Ukjent
+        label: Ukjent
     description: Referansesystem for høydeangivelse, som EPSG-kode.
   - name: feltundersNr
     logicalType: string
@@ -2644,6 +2726,17 @@ schema:
     description: Laghøyde for tolkning [m]
   - name: høydeReferanse
     logicalType: string
+    logicalTypeOptions:
+      pattern: ^(5776|5941|Ukjent)$
+    customProperties:
+    - property: allowedValues
+      value:
+      - value: '5776'
+        label: '5776'
+      - value: '5941'
+        label: '5941'
+      - value: Ukjent
+        label: Ukjent
     description: Referansesystem for høydeangivelse, som EPSG-kode.
   - name: tilhorertolketpunkt_fk
     logicalType: string
@@ -2726,6 +2819,17 @@ schema:
     required: true
   - name: høydeReferanse
     logicalType: string
+    logicalTypeOptions:
+      pattern: ^(5776|5941|Ukjent)$
+    customProperties:
+    - property: allowedValues
+      value:
+      - value: '5776'
+        label: '5776'
+      - value: '5941'
+        label: '5941'
+      - value: Ukjent
+        label: Ukjent
     description: Referansesystem for høydeangivelse, som EPSG-kode.
     required: true
   - name: digitaliseringsmålestokk
