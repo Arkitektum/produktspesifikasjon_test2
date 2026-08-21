@@ -2,7 +2,7 @@ metadataId: 7c36da6f-3bb3-49cc-8968-5d246ee9eb46
 output_directory: produktspesifikasjon
 product_slug: artsutbredelse_andre_marine_arter
 updated: '2026-08-10'
-outputs: geopackage,xsd,jsonschema,odcs
+outputs: geopackage,xsd,jsonschema,odcs,ldproxy
 scopes:
 - name: Artsutbredelse
   url: https://kart.hi.no/data/utbredelseskart/utbredelse_ovrig/ogc/features/v1/collections
