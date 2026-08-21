@@ -1,0 +1,316 @@
+---
+id: ny_datakilde
+enabled: true
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25833
+  forceAxisOrder: NONE
+nativeTimeZone: Europe/Oslo
+connectionInfo:
+  database: FIXME
+  host: FIXME
+  user: FIXME
+  password: FIXME-base64-encoded
+  schemas:
+  - public
+sourcePathDefaults:
+  primaryKey: objid
+  sortKey: objid
+types:
+  dataavgrensning:
+    sourcePath: /dataavgrensning
+    type: OBJECT
+    objectType: Dataavgrensning
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      geometry:
+        sourcePath: geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+        constraints:
+          required: true
+      lokalid:
+        sourcePath: lokalid
+        type: STRING
+      identifikasjon:
+        sourcePath: "[identifikasjon=objid]identifikasjon"
+        type: OBJECT
+        objectType: Identifikasjon
+        properties:
+          lokalId:
+            sourcePath: lokalid
+            type: STRING
+          navnerom:
+            sourcePath: navnerom
+            type: STRING
+          versjonId:
+            sourcePath: versjonid
+            type: STRING
+      førsteDigitaliseringsdato:
+        sourcePath: førstedigitaliseringsdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      oppdateringsdato:
+        sourcePath: oppdateringsdato
+        type: DATE
+      datauttaksdato:
+        sourcePath: datauttaksdato
+        type: DATE
+      temakvalitet:
+        sourcePath: temakvalitet
+        type: STRING
+      geolPavisningstype:
+        sourcePath: geolpavisningstype
+        type: STRING
+      geolPavisningstypeNavn:
+        sourcePath: geolpavisningstypenavn
+        type: STRING
+      kvalitet:
+        sourcePath: "[kvalitet=objid]posisjonskvalitet"
+        type: OBJECT
+        objectType: Posisjonskvalitet
+        properties:
+          målemetode:
+            sourcePath: målemetode
+            type: STRING
+          målemetodeNavn:
+            sourcePath: målemetodenavn
+            type: STRING
+          nøyaktighet:
+            sourcePath: nøyaktighet
+            type: INTEGER
+      medium:
+        sourcePath: medium
+        type: STRING
+      mediumNavn:
+        sourcePath: mediumnavn
+        type: STRING
+      opphav:
+        sourcePath: opphav
+        type: STRING
+  fiktivdelelinje:
+    sourcePath: /fiktivdelelinje
+    type: OBJECT
+    objectType: FiktivDelelinje
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      geometry:
+        sourcePath: geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+        constraints:
+          required: true
+      lokalid:
+        sourcePath: lokalid
+        type: INTEGER
+  geolavgrlinje:
+    sourcePath: /geolavgrlinje
+    type: OBJECT
+    objectType: GeolAvgrLinje
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      geometry:
+        sourcePath: geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+        constraints:
+          required: true
+      lokalid:
+        sourcePath: lokalid
+        type: STRING
+      identifikasjon:
+        sourcePath: "[identifikasjon=objid]identifikasjon"
+        type: OBJECT
+        objectType: Identifikasjon
+        properties:
+          lokalId:
+            sourcePath: lokalid
+            type: STRING
+          navnerom:
+            sourcePath: navnerom
+            type: STRING
+          versjonId:
+            sourcePath: versjonid
+            type: STRING
+      førsteDigitaliseringsdato:
+        sourcePath: førstedigitaliseringsdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      oppdateringsdato:
+        sourcePath: oppdateringsdato
+        type: DATE
+      datauttaksdato:
+        sourcePath: datauttaksdato
+        type: DATE
+      temakvalitet:
+        sourcePath: temakvalitet
+        type: STRING
+      geolPavisningstype:
+        sourcePath: geolpavisningstype
+        type: STRING
+      geolPavisningstypeNavn:
+        sourcePath: geolpavisningstypenavn
+        type: STRING
+      kvalitet:
+        sourcePath: "[kvalitet=objid]posisjonskvalitet"
+        type: OBJECT
+        objectType: Posisjonskvalitet
+        properties:
+          målemetode:
+            sourcePath: målemetode
+            type: STRING
+          målemetodeNavn:
+            sourcePath: målemetodenavn
+            type: STRING
+          nøyaktighet:
+            sourcePath: nøyaktighet
+            type: INTEGER
+      medium:
+        sourcePath: medium
+        type: STRING
+      mediumNavn:
+        sourcePath: mediumnavn
+        type: STRING
+      opphav:
+        sourcePath: opphav
+        type: STRING
+  losmasseflate:
+    sourcePath: /losmasseflate
+    type: OBJECT
+    objectType: LosmasseFlate
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      geometry:
+        sourcePath: geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON
+        constraints:
+          required: true
+      lokalid:
+        sourcePath: lokalid
+        type: STRING
+      identifikasjon:
+        sourcePath: "[identifikasjon=objid]identifikasjon"
+        type: OBJECT
+        objectType: Identifikasjon
+        properties:
+          lokalId:
+            sourcePath: lokalid
+            type: STRING
+          navnerom:
+            sourcePath: navnerom
+            type: STRING
+          versjonId:
+            sourcePath: versjonid
+            type: STRING
+      datauttaksdato:
+        sourcePath: datauttaksdato
+        type: DATE
+        role: PRIMARY_INSTANT
+        constraints:
+          required: true
+      førsteDigitaliseringsdato:
+        sourcePath: førstedigitaliseringsdato
+        type: DATE
+      losmassetype:
+        sourcePath: losmassetype
+        type: STRING
+        constraints:
+          required: true
+      losmassetypeNavn:
+        sourcePath: losmassetypenavn
+        type: STRING
+        constraints:
+          required: true
+  losmassegrense:
+    sourcePath: /losmassegrense
+    type: OBJECT
+    objectType: LosmasseGrense
+    properties:
+      oid:
+        sourcePath: objid
+        type: INTEGER
+        role: ID
+      geometry:
+        sourcePath: geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: LINE_STRING
+        constraints:
+          required: true
+      lokalid:
+        sourcePath: lokalid
+        type: STRING
+      identifikasjon:
+        sourcePath: "[identifikasjon=objid]identifikasjon"
+        type: OBJECT
+        objectType: Identifikasjon
+        properties:
+          lokalId:
+            sourcePath: lokalid
+            type: STRING
+          navnerom:
+            sourcePath: navnerom
+            type: STRING
+          versjonId:
+            sourcePath: versjonid
+            type: STRING
+      førsteDigitaliseringsdato:
+        sourcePath: førstedigitaliseringsdato
+        type: DATE
+        role: PRIMARY_INSTANT
+      oppdateringsdato:
+        sourcePath: oppdateringsdato
+        type: DATE
+      datauttaksdato:
+        sourcePath: datauttaksdato
+        type: DATE
+      temakvalitet:
+        sourcePath: temakvalitet
+        type: STRING
+      geolPavisningstype:
+        sourcePath: geolpavisningstype
+        type: STRING
+      geolPavisningstypeNavn:
+        sourcePath: geolpavisningstypenavn
+        type: STRING
+      kvalitet:
+        sourcePath: "[kvalitet=objid]posisjonskvalitet"
+        type: OBJECT
+        objectType: Posisjonskvalitet
+        properties:
+          målemetode:
+            sourcePath: målemetode
+            type: STRING
+          målemetodeNavn:
+            sourcePath: målemetodenavn
+            type: STRING
+          nøyaktighet:
+            sourcePath: nøyaktighet
+            type: INTEGER
+      medium:
+        sourcePath: medium
+        type: STRING
+      mediumNavn:
+        sourcePath: mediumnavn
+        type: STRING
+      opphav:
+        sourcePath: opphav
+        type: STRING

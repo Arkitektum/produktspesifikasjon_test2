@@ -30,7 +30,6 @@
     </EncodingRule>
    </rules>
    <xi:include href="https://shapechange.net/resources/config/StandardMapEntries_Ldproxy2.xml" />
-   <xi:include href="https://shapechange.net/resources/config/StandardSqlMapEntries-PostgreSQL.xml" />
   </Target>
  </targets>
 </ShapeChangeConfiguration>
