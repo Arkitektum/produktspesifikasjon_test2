@@ -179,7 +179,7 @@ Datasettet kan anvendes som underlag i overordnet areal- og miljøplanlegging. D
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-08-10
+**Metadatadato**: 2026-08-21
 
 **språk**: nor
 
