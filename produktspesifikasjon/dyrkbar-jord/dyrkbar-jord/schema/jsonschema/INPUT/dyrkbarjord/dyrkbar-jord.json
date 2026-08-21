@@ -4,45 +4,48 @@
   "$id": "https://skjema.geonorge.no/SOSI/produktspesifikasjon/dyrkbar-jord/dyrkbar-jord/dyrkbarjord/dyrkbar-jord.json",
   "definitions": {
     "Dyrkbar jord": {
-      "$id": "#Dyrkbar jord",
       "type": "object",
       "properties": {
         "geometry": {
           "$ref": "https://geojson.org/schema/Polygon.json"
         },
-        "properties": {
-          "type": "object",
-          "properties": {
-            "lokalId": {
-              "type": "integer"
-            },
-            "dyrkbarJord": {
-              "type": "integer"
-            },
-            "myrTorv": {
-              "type": "integer"
-            },
-            "verneform": {
-              "type": "string"
-            },
-            "planeringsjord": {
-              "type": "integer"
-            },
-            "fulldyrka2008": {
-              "type": "integer"
-            },
-            "årsversjon": {
-              "type": "integer"
-            },
-            "informasjon": {
-              "type": "string"
-            },
-            "områdeId": {
-              "type": "integer"
-            }
-          }
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "lokalId": {
+          "type": "integer"
+        },
+        "dyrkbarJord": {
+          "type": "integer"
+        },
+        "myrTorv": {
+          "type": "integer"
+        },
+        "verneform": {
+          "type": "string"
+        },
+        "planeringsjord": {
+          "type": "integer"
+        },
+        "fulldyrka2008": {
+          "type": "integer"
+        },
+        "årsversjon": {
+          "type": "integer"
+        },
+        "informasjon": {
+          "type": "string"
+        },
+        "områdeId": {
+          "type": "integer"
         }
-      }
+      },
+      "required": [
+        "@type"
+      ]
     }
   }
 }
