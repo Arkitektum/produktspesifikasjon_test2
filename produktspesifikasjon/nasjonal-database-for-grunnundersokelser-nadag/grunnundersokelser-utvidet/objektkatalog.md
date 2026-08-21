@@ -796,6 +796,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>string</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
+    </tr>
   </tbody>
 </table>
 
@@ -2833,6 +2837,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>string</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
+    </tr>
   </tbody>
 </table>
 
@@ -4210,6 +4218,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>string</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
+    </tr>
   </tbody>
 </table>
 
@@ -4563,6 +4575,31 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>number</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="feature-attribute-table">
+  <colgroup>
+    <col style="width: 35%;" />
+    <col style="width: 65%;" />
+  </colgroup>
+  <tbody>
+    <tr>
+      <th scope="row">Navn:</th>
+      <td><strong>underspkt_fk</strong></td>
+    </tr>
+    <tr>
+      <th scope="row">Definisjon:</th>
+      <td>Fremmednøkkel til geoteknisk borehull.</td>
+    </tr>
+    <tr>
+      <th scope="row">Multiplisitet:</th>
+      <td>0..1</td>
+    </tr>
+    <tr>
+      <th scope="row">Type:</th>
+      <td>string</td>
     </tr>
   </tbody>
 </table>
@@ -4971,6 +5008,10 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>string</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- AssessmentReport<br />- BoreHoleAttachment<br />- DigitizedDwg<br />- DigitizedImage<br />- Drawing<br />- GeoReport<br />- Image<br />- LabReport<br />- Model<br />- NotSpecified<br />- PlanPdf<br />- PlanSymbolImage<br />- ProfileImage<br />- ProfilePdf<br />- RawdataFile</td>
     </tr>
   </tbody>
 </table>
@@ -6302,6 +6343,10 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>string</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
     </tr>
   </tbody>
 </table>
@@ -8626,6 +8671,10 @@ Egenskaper
       <th scope="row">Type:</th>
       <td>string</td>
     </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
+    </tr>
   </tbody>
 </table>
 
@@ -9046,6 +9095,10 @@ Egenskaper
     <tr>
       <th scope="row">Type:</th>
       <td>string</td>
+    </tr>
+    <tr>
+      <th scope="row">Tillatte verdier:</th>
+      <td>- 5776<br />- 5941<br />- Ukjent</td>
     </tr>
   </tbody>
 </table>
@@ -17830,6 +17883,21 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>5776</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5941</td>
+    </tr>
+    <tr>
+      <td>Ukjent</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>0</td>
     </tr>
     <tr>
@@ -17971,6 +18039,81 @@ Koder
       <td></td>
       <td></td>
       <td>9</td>
+    </tr>
+    <tr>
+      <td>AssessmentReport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BoreHoleAttachment</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DigitizedDwg</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DigitizedImage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Drawing</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GeoReport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LabReport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NotSpecified</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PlanPdf</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PlanSymbolImage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ProfileImage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ProfilePdf</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RawdataFile</td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td></td>

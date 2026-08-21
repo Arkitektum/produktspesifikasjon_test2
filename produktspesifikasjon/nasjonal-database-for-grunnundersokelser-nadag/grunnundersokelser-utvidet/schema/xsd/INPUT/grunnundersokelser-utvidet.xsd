@@ -4,8 +4,17 @@
   <element name="BorlengdeTilBerg" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:BorlengdeTilBergType"/>
   <complexType name="BorlengdeTilBergType">
     <sequence>
-      <element minOccurs="0" name="borlengdeKvalitet" type="string"/>
-      <element minOccurs="0" name="borlengdeTilBerg" type="double"/>
+      <element minOccurs="0" name="borlengdeKvalitet" type="string">
+        <annotation>
+          <documentation>Beskriver om dybden til berg er antatt eller påvist med en sikker metode&lt;br/&gt;&lt;engelsk style="font-style:italic;font-size:smaller"&gt; &lt;br/&gt;Defines the quality of the depth information either assumed or confirmed by a secure method&lt;br/&gt;&lt;/engelsk&gt;</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="borlengdeTilBerg" type="double">
+        <annotation>
+          <documentation>Dybde til fjell som ikke er målt men basert på tolkning [m]&lt;br/&gt;&lt;engelsk style="font-style:italic;font-size:smaller"&gt;&lt;br/&gt;Depth to bedrock based on interpretation
+&lt;/engelsk&gt;</documentation>
+        </annotation>
+      </element>
     </sequence>
   </complexType>
   <complexType name="BorlengdeTilBergPropertyType">
@@ -16,10 +25,26 @@
   <element name="EksternIdentifikasjon" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:EksternIdentifikasjonType"/>
   <complexType name="EksternIdentifikasjonType">
     <sequence>
-      <element minOccurs="0" name="eksternId" type="string"/>
-      <element minOccurs="0" name="eksternNavnerom" type="string"/>
-      <element minOccurs="0" name="eksternVersjonId" type="string"/>
-      <element minOccurs="0" name="eksternLeveringDato" type="dateTime"/>
+      <element minOccurs="0" name="eksternId" type="string">
+        <annotation>
+          <documentation>Lokal identifikator, tildelt av ekstern leverendør. &lt;br/&gt;Det er data leverendørens ansvar å sørge for at denne eksterne identifikatoren er unik innenfor navnerommet.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="eksternNavnerom" type="string">
+        <annotation>
+          <documentation>Navnerom som identifiserer datakilden/leverandør til objektet</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="eksternVersjonId" type="string">
+        <annotation>
+          <documentation>Identifikasjon av en spesiell versjon av et geografisk objekt  Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="eksternLeveringDato" type="dateTime">
+        <annotation>
+          <documentation>Når objektet ble levert til database (Nadag)</documentation>
+        </annotation>
+      </element>
     </sequence>
   </complexType>
   <complexType name="EksternIdentifikasjonPropertyType">
@@ -30,9 +55,22 @@
   <element name="Identifikasjon" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:IdentifikasjonType"/>
   <complexType name="IdentifikasjonType">
     <sequence>
-      <element minOccurs="0" name="lokalId" type="string"/>
-      <element minOccurs="0" name="navnerom" type="string"/>
-      <element minOccurs="0" name="versjonId" type="string"/>
+      <element minOccurs="0" name="lokalId" type="string">
+        <annotation>
+          <documentation>Lokal identifikator, tildelt av dataleverendør/dataforvalter. Den lokale identifikatoren er unik innenfor navnerommet, ingen andre objekter har samme identifikator.&lt;br/&gt;NOTE: Det er data leverendørens ansvar å sørge for at denne lokale identifikatoren er unik innenfor navnerommet.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="navnerom" type="string">
+        <annotation>
+          <documentation>Navnerom som unikt identifiserer datakilden til objektet, starter med to bokstavs kode jfr ISO 3166. Benytter understreking  ("_") dersom data produsenten ikke er assosiert med bare et land.
+&lt;br/&gt;NOTE 1 : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og vil registreres i "INSPIRE external  Object Identifier Namespaces Register"&lt;br/&gt;Eksempel: NO for Norge.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="versjonId" type="string">
+        <annotation>
+          <documentation>Identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. &lt;br/&gt;NOTE Maksimum lengde er valgt for å tillate tidsregistrering i henhold til  ISO 8601, slik som  "2007-02-12T12:12:12+05:30" som versjonId.</documentation>
+        </annotation>
+      </element>
     </sequence>
   </complexType>
   <complexType name="IdentifikasjonPropertyType">
@@ -46,7 +84,11 @@
       <element minOccurs="0" name="href"/>
       <element minOccurs="0" name="rel" type="string"/>
       <element minOccurs="0" name="type" type="string"/>
-      <element minOccurs="0" name="title" type="string"/>
+      <element minOccurs="0" name="title" type="string">
+        <annotation>
+          <documentation>tilhørerGB &gt; GeotekniskBorehull-title</documentation>
+        </annotation>
+      </element>
     </sequence>
   </complexType>
   <complexType name="LinkPropertyType">
@@ -57,10 +99,26 @@
   <element name="PosisjonskvalitetNADAG" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:PosisjonskvalitetNADAGType"/>
   <complexType name="PosisjonskvalitetNADAGType">
     <sequence>
-      <element minOccurs="0" name="målemetode" type="string"/>
-      <element minOccurs="0" name="målemetodeHøyde" type="string"/>
-      <element minOccurs="0" name="nøyaktighet" type="integer"/>
-      <element minOccurs="0" name="nøyaktighetHøyde" type="integer"/>
+      <element minOccurs="0" name="målemetode" type="string">
+        <annotation>
+          <documentation>Metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="målemetodeHøyde" type="string">
+        <annotation>
+          <documentation>Metode for å måle høyden</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="nøyaktighet" type="integer">
+        <annotation>
+          <documentation>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer&lt;br/&gt;Merknad:&lt;br/&gt;Oppgitt i [cm]</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="nøyaktighetHøyde" type="integer">
+        <annotation>
+          <documentation>Nøyaktighet for høyden i [cm]</documentation>
+        </annotation>
+      </element>
     </sequence>
   </complexType>
   <complexType name="PosisjonskvalitetNADAGPropertyType">
@@ -71,7 +129,11 @@
   <element name="array" substitutionGroup="gml:AbstractObject" type="grunnundersokelserutvidet:arrayType"/>
   <complexType name="arrayType">
     <sequence>
-      <element maxOccurs="unbounded" minOccurs="0" name="title"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="title">
+        <annotation>
+          <documentation>undersOmr &gt; GeotekniskUnders-title</documentation>
+        </annotation>
+      </element>
     </sequence>
   </complexType>
   <complexType name="arrayPropertyType">
@@ -147,6 +209,9 @@
       <enumeration value="99"/>
       <enumeration value="1"/>
       <enumeration value="2"/>
+      <enumeration value="5776"/>
+      <enumeration value="5941"/>
+      <enumeration value="Ukjent"/>
       <enumeration value="0"/>
       <enumeration value="88"/>
       <enumeration value="89"/>
@@ -176,6 +241,21 @@
       <enumeration value="7"/>
       <enumeration value="8"/>
       <enumeration value="9"/>
+      <enumeration value="AssessmentReport"/>
+      <enumeration value="BoreHoleAttachment"/>
+      <enumeration value="DigitizedDwg"/>
+      <enumeration value="DigitizedImage"/>
+      <enumeration value="Drawing"/>
+      <enumeration value="GeoReport"/>
+      <enumeration value="Image"/>
+      <enumeration value="LabReport"/>
+      <enumeration value="Model"/>
+      <enumeration value="NotSpecified"/>
+      <enumeration value="PlanPdf"/>
+      <enumeration value="PlanSymbolImage"/>
+      <enumeration value="ProfileImage"/>
+      <enumeration value="ProfilePdf"/>
+      <enumeration value="RawdataFile"/>
       <enumeration value="57"/>
       <enumeration value="58"/>
       <enumeration value="59"/>

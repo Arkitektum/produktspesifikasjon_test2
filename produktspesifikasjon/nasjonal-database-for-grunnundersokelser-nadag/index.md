@@ -163,7 +163,7 @@ Beskriv prosessen for å holde data oppdatert.
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-08-17
+**Metadatadato**: 2026-08-21
 
 **språk**: nor
 
