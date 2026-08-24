@@ -33,20 +33,15 @@ types:
       lokalid:
         sourcePath: lokalid
         type: STRING
-      identifikasjon:
-        sourcePath: '[identifikasjon=objid]identifikasjon'
-        type: OBJECT
-        objectType: Identifikasjon
-        properties:
-          lokalId:
-            sourcePath: lokalid
-            type: STRING
-          navnerom:
-            sourcePath: navnerom
-            type: STRING
-          versjonId:
-            sourcePath: versjonid
-            type: STRING
+      identifikasjon_lokalId:
+        sourcePath: identifikasjon_lokalid
+        type: STRING
+      identifikasjon_navnerom:
+        sourcePath: identifikasjon_navnerom
+        type: STRING
+      identifikasjon_versjonId:
+        sourcePath: identifikasjon_versjonid
+        type: STRING
       førsteDigitaliseringsdato:
         sourcePath: førstedigitaliseringsdato
         type: DATE
@@ -70,22 +65,17 @@ types:
       geolPavisningstypeNavn:
         sourcePath: geolpavisningstypenavn
         type: STRING
-      kvalitet:
-        sourcePath: '[kvalitet=objid]posisjonskvalitet'
-        type: OBJECT
-        objectType: Posisjonskvalitet
-        properties:
-          målemetode:
-            sourcePath: målemetode
-            type: STRING
-            constraints:
-              codelist: M_lemetode
-          målemetodeNavn:
-            sourcePath: målemetodenavn
-            type: STRING
-          nøyaktighet:
-            sourcePath: nøyaktighet
-            type: INTEGER
+      kvalitet_målemetode:
+        sourcePath: kvalitet_målemetode
+        type: STRING
+        constraints:
+          codelist: M_lemetode
+      kvalitet_målemetodeNavn:
+        sourcePath: kvalitet_målemetodenavn
+        type: STRING
+      kvalitet_nøyaktighet:
+        sourcePath: kvalitet_nøyaktighet
+        type: INTEGER
       medium:
         sourcePath: medium
         type: STRING
@@ -135,20 +125,15 @@ types:
       lokalid:
         sourcePath: lokalid
         type: STRING
-      identifikasjon:
-        sourcePath: '[identifikasjon=objid]identifikasjon'
-        type: OBJECT
-        objectType: Identifikasjon
-        properties:
-          lokalId:
-            sourcePath: lokalid
-            type: STRING
-          navnerom:
-            sourcePath: navnerom
-            type: STRING
-          versjonId:
-            sourcePath: versjonid
-            type: STRING
+      identifikasjon_lokalId:
+        sourcePath: identifikasjon_lokalid
+        type: STRING
+      identifikasjon_navnerom:
+        sourcePath: identifikasjon_navnerom
+        type: STRING
+      identifikasjon_versjonId:
+        sourcePath: identifikasjon_versjonid
+        type: STRING
       førsteDigitaliseringsdato:
         sourcePath: førstedigitaliseringsdato
         type: DATE
@@ -172,22 +157,17 @@ types:
       geolPavisningstypeNavn:
         sourcePath: geolpavisningstypenavn
         type: STRING
-      kvalitet:
-        sourcePath: '[kvalitet=objid]posisjonskvalitet'
-        type: OBJECT
-        objectType: Posisjonskvalitet
-        properties:
-          målemetode:
-            sourcePath: målemetode
-            type: STRING
-            constraints:
-              codelist: M_lemetode
-          målemetodeNavn:
-            sourcePath: målemetodenavn
-            type: STRING
-          nøyaktighet:
-            sourcePath: nøyaktighet
-            type: INTEGER
+      kvalitet_målemetode:
+        sourcePath: kvalitet_målemetode
+        type: STRING
+        constraints:
+          codelist: M_lemetode
+      kvalitet_målemetodeNavn:
+        sourcePath: kvalitet_målemetodenavn
+        type: STRING
+      kvalitet_nøyaktighet:
+        sourcePath: kvalitet_nøyaktighet
+        type: INTEGER
       medium:
         sourcePath: medium
         type: STRING
@@ -218,20 +198,15 @@ types:
       lokalid:
         sourcePath: lokalid
         type: STRING
-      identifikasjon:
-        sourcePath: '[identifikasjon=objid]identifikasjon'
-        type: OBJECT
-        objectType: Identifikasjon
-        properties:
-          lokalId:
-            sourcePath: lokalid
-            type: STRING
-          navnerom:
-            sourcePath: navnerom
-            type: STRING
-          versjonId:
-            sourcePath: versjonid
-            type: STRING
+      identifikasjon_lokalId:
+        sourcePath: identifikasjon_lokalid
+        type: STRING
+      identifikasjon_navnerom:
+        sourcePath: identifikasjon_navnerom
+        type: STRING
+      identifikasjon_versjonId:
+        sourcePath: identifikasjon_versjonid
+        type: STRING
       datauttaksdato:
         sourcePath: datauttaksdato
         type: DATE
@@ -271,20 +246,15 @@ types:
       lokalid:
         sourcePath: lokalid
         type: STRING
-      identifikasjon:
-        sourcePath: '[identifikasjon=objid]identifikasjon'
-        type: OBJECT
-        objectType: Identifikasjon
-        properties:
-          lokalId:
-            sourcePath: lokalid
-            type: STRING
-          navnerom:
-            sourcePath: navnerom
-            type: STRING
-          versjonId:
-            sourcePath: versjonid
-            type: STRING
+      identifikasjon_lokalId:
+        sourcePath: identifikasjon_lokalid
+        type: STRING
+      identifikasjon_navnerom:
+        sourcePath: identifikasjon_navnerom
+        type: STRING
+      identifikasjon_versjonId:
+        sourcePath: identifikasjon_versjonid
+        type: STRING
       førsteDigitaliseringsdato:
         sourcePath: førstedigitaliseringsdato
         type: DATE
@@ -308,22 +278,17 @@ types:
       geolPavisningstypeNavn:
         sourcePath: geolpavisningstypenavn
         type: STRING
-      kvalitet:
-        sourcePath: '[kvalitet=objid]posisjonskvalitet'
-        type: OBJECT
-        objectType: Posisjonskvalitet
-        properties:
-          målemetode:
-            sourcePath: målemetode
-            type: STRING
-            constraints:
-              codelist: M_lemetode
-          målemetodeNavn:
-            sourcePath: målemetodenavn
-            type: STRING
-          nøyaktighet:
-            sourcePath: nøyaktighet
-            type: INTEGER
+      kvalitet_målemetode:
+        sourcePath: kvalitet_målemetode
+        type: STRING
+        constraints:
+          codelist: M_lemetode
+      kvalitet_målemetodeNavn:
+        sourcePath: kvalitet_målemetodenavn
+        type: STRING
+      kvalitet_nøyaktighet:
+        sourcePath: kvalitet_nøyaktighet
+        type: INTEGER
       medium:
         sourcePath: medium
         type: STRING

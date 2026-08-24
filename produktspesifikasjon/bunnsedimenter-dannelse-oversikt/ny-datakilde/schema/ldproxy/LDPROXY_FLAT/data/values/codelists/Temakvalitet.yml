@@ -1,0 +1,10 @@
+---
+label: Temakvalitet
+entries:
+  dårlig: dårlig
+  god: god
+  megetGod: megetGod
+  noeDårlig: noeDårlig
+  noksåGod: noksåGod
+  særdelesGod: særdelesGod
+sourceType: TEMPLATES
