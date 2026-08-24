@@ -15,6 +15,18 @@
   <parameter name="reportLevel" value="INFO" />
   <parameter name="logFile" value="/home/runner/work/produktspesifikasjon_test2/produktspesifikasjon_test2/produktspesifikasjon/bunnsedimenter-dannelse-oversikt/ny-datakilde/schema/log.xml" />
  </log>
+ <transformers>
+  <Transformer class="de.interactive_instruments.shapechange.core.transformation.flattening.Flattener" mode="enabled" id="LDPROXY_FLAT" input="INPUT">
+   <parameters>
+    <ProcessParameter name="separatorForPropertyFromNonUnion" value="_" />
+   </parameters>
+   <rules>
+    <ProcessRuleSet name="flattener">
+     <rule name="rule-trf-prop-flatten-types" />
+    </ProcessRuleSet>
+   </rules>
+  </Transformer>
+ </transformers>
  <targets>
   <TargetXmlSchema class="de.interactive_instruments.shapechange.core.target.xmlschema.XmlSchema" mode="enabled" inputs="INPUT">
    <targetParameter name="outputDirectory" value="/home/runner/work/produktspesifikasjon_test2/produktspesifikasjon_test2/produktspesifikasjon/bunnsedimenter-dannelse-oversikt/ny-datakilde/schema/xsd" />
@@ -66,7 +78,7 @@
    </mapEntries>
    <xi:include href="https://shapechange.net/resources/config/StandardMapEntries_JSON.xml" />
   </Target>
-  <Target class="de.interactive_instruments.shapechange.core.target.ldproxy2.Ldproxy2Target" mode="enabled" inputs="INPUT">
+  <Target class="de.interactive_instruments.shapechange.core.target.ldproxy2.Ldproxy2Target" mode="enabled" inputs="LDPROXY_FLAT">
    <targetParameter name="outputDirectory" value="/home/runner/work/produktspesifikasjon_test2/produktspesifikasjon_test2/produktspesifikasjon/bunnsedimenter-dannelse-oversikt/ny-datakilde/schema/ldproxy" />
    <targetParameter name="srid" value="25833" />
    <targetParameter name="primaryKeyColumn" value="objid" />
