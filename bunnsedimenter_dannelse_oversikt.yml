@@ -3,6 +3,7 @@ output_directory: produktspesifikasjon
 product_slug: bunnsedimenter_dannelse_oversikt
 updated: '2026-08-10'
 outputs: ldproxy,geopackage,xsd,jsonschema,odcs
+ldproxy_provider: geopackage
 scopes:
 - name: Ny datakilde
   url: https://geo.ngu.no/api/features/bunnsedimentdannelseoversikt
