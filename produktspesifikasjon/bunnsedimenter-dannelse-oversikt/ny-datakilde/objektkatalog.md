@@ -265,7 +265,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Temakvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -294,7 +294,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>GeolPavisningstype</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -369,7 +369,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Målemetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -448,7 +448,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Medium</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -822,7 +822,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Temakvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -851,7 +851,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>GeolPavisningstype</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -926,7 +926,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Målemetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1005,7 +1005,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Medium</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1296,7 +1296,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Losmassetype</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1587,7 +1587,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Temakvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1616,7 +1616,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>GeolPavisningstype</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1691,7 +1691,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Målemetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1770,7 +1770,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Medium</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1831,7 +1831,7 @@ Egenskaper
 
 ### Kodelister
 
-#### «Enumeration» string
+#### «Enumeration» Temakvalitet
 
 Koder
 
@@ -1874,6 +1874,22 @@ Koder
       <td></td>
       <td></td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» GeolPavisningstype
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td></td>
       <td></td>
@@ -2009,6 +2025,47 @@ Koder
       <td></td>
       <td>9</td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» Målemetode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14</td>
+    </tr>
     <tr>
       <td></td>
       <td></td>
@@ -2028,6 +2085,41 @@ Koder
       <td></td>
       <td></td>
       <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>32</td>
     </tr>
     <tr>
       <td></td>
@@ -2294,6 +2386,22 @@ Koder
       <td></td>
       <td>99</td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» Medium
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>B</td>
       <td></td>
@@ -2354,6 +2462,32 @@ Koder
       <td></td>
       <td></td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» Losmassetype
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
     <tr>
       <td></td>
       <td></td>
@@ -2372,7 +2506,17 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>110</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12</td>
     </tr>
     <tr>
       <td></td>
@@ -2392,12 +2536,27 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>130</td>
     </tr>
     <tr>
       <td></td>
       <td></td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>140</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15</td>
     </tr>
     <tr>
       <td></td>
@@ -2413,6 +2572,11 @@ Koder
       <td></td>
       <td></td>
       <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20</td>
     </tr>
     <tr>
       <td></td>
@@ -2467,6 +2631,11 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>210</td>
     </tr>
     <tr>
@@ -2517,7 +2686,17 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>220</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23</td>
     </tr>
     <tr>
       <td></td>
@@ -2548,6 +2727,11 @@ Koder
       <td></td>
       <td></td>
       <td>250</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30</td>
     </tr>
     <tr>
       <td></td>
@@ -2593,6 +2777,11 @@ Koder
       <td></td>
       <td></td>
       <td>309</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>31</td>
     </tr>
     <tr>
       <td></td>
@@ -2652,12 +2841,137 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>57</td>
     </tr>
     <tr>
       <td></td>
       <td></td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>88</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>90</td>
     </tr>
   </tbody>
 </table>

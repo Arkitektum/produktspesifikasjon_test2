@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:nydatakilde="https://skjema.geonorge.no/SOSI/produktspesifikasjon/bunnsedimenter-dannelse-oversikt/ny-datakilde/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.geonorge.no/SOSI/produktspesifikasjon/bunnsedimenter-dannelse-oversikt/ny-datakilde/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Dataavgrensning" substitutionGroup="gml:AbstractFeature" type="nydatakilde:DataavgrensningType">
+    <annotation>
+      <documentation>Generell avgrensningslinje, f.eks. mellom datasett med ulik kvalitet, innhold eller detaljering</documentation>
+    </annotation>
+  </element>
+  <complexType name="DataavgrensningType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:CurvePropertyType"/>
+          <element minOccurs="0" name="lokalid" type="string">
+            <annotation>
+              <documentation>lokalid</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="identifikasjon" type="nydatakilde:IdentifikasjonPropertyType"/>
+          <element minOccurs="0" name="førsteDigitaliseringsdato" type="date">
+            <annotation>
+              <documentation>Dato når en representasjon av objektet i digital form første gang ble etablert&lt;br/&gt;Merknad: &lt;br/&gt;FørsteDigitaliseringsdato kan skille seg fra førsteDatafangstdato ved at den første datafangsten skjedde analogt og gjort om til digital form senere i en produksjonsprosess. &lt;br/&gt;Eventuelt at innlegging i databasen skjedde på et senere tidspunkt enn registreringen /observasjonen / målingen av objektet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="oppdateringsdato" type="date">
+            <annotation>
+              <documentation>Dato for siste endring på objektetdataene &lt;br/&gt;Merknad: 
+Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er registrert kan bufres en kortere eller lengre periode før disse legges inn i datasystemet (databasen).&lt;br/&gt;-Definition-&lt;br/&gt;Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="datauttaksdato" type="date">
+            <annotation>
+              <documentation>Dato for uttak fra en database&lt;br/&gt;Merknad:&lt;br/&gt;Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="temakvalitet" type="nydatakilde:TemakvalitetType">
+            <annotation>
+              <documentation>Kvaliteten på registrering/kartlegging av tema sett i forhold til faktiske forhold i naturen. Ulik tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets økonomi. Med nøyaktighet i denne sammenheng menes hvor korrekt registreringen avspeiler objektets posisjon i naturen og presisjonen i valg av tematisk innhold i forhold til generalisering
+&lt;br/&gt;Merknad: Tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets målsetning</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolPavisningstype" type="nydatakilde:GeolPavisningstypeType">
+            <annotation>
+              <documentation>Hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolPavisningstypeNavn" type="string">
+            <annotation>
+              <documentation>Hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kvalitet" type="nydatakilde:PosisjonskvalitetPropertyType"/>
+          <element minOccurs="0" name="medium" type="nydatakilde:MediumType">
+            <annotation>
+              <documentation>Objektets beliggenhet i forhold til jordoverflaten&lt;br/&gt;Eksempel:
+På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="mediumNavn" type="string">
+            <annotation>
+              <documentation>Objektets beliggenhet i forhold til jordoverflaten&lt;br/&gt;Eksempel:
+På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="opphav" type="string">
+            <annotation>
+              <documentation>Referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde
+&lt;br/&gt;Merknad: &lt;br/&gt;Kan også beskrive navn på person og årsak til oppdatering</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DataavgrensningPropertyType">
+    <sequence minOccurs="0">
+      <element ref="nydatakilde:Dataavgrensning"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FiktivDelelinje" substitutionGroup="gml:AbstractFeature" type="nydatakilde:FiktivDelelinjeType">
+    <annotation>
+      <documentation>Linje for å dele opp store flateobjekter&lt;br/&gt;Merknad: &lt;br/&gt;En del produktspesifikasjoner benytter spesifikke fiktive delelinjer.</documentation>
+    </annotation>
+  </element>
+  <complexType name="FiktivDelelinjeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:CurvePropertyType"/>
+          <element minOccurs="0" name="lokalid" type="integer"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FiktivDelelinjePropertyType">
+    <sequence minOccurs="0">
+      <element ref="nydatakilde:FiktivDelelinje"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GeolAvgrLinje" substitutionGroup="gml:AbstractFeature" type="nydatakilde:GeolAvgrLinjeType">
+    <annotation>
+      <documentation>Generell avgrensning av geologisk objekt&lt;br/&gt;-- Definition -- &lt;br/&gt;General delimitation of geological object</documentation>
+    </annotation>
+  </element>
+  <complexType name="GeolAvgrLinjeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:CurvePropertyType"/>
+          <element minOccurs="0" name="lokalid" type="string">
+            <annotation>
+              <documentation>lokalid</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="identifikasjon" type="nydatakilde:IdentifikasjonPropertyType"/>
+          <element minOccurs="0" name="førsteDigitaliseringsdato" type="date">
+            <annotation>
+              <documentation>Dato når en representasjon av objektet i digital form første gang ble etablert&lt;br/&gt;Merknad: &lt;br/&gt;FørsteDigitaliseringsdato kan skille seg fra førsteDatafangstdato ved at den første datafangsten skjedde analogt og gjort om til digital form senere i en produksjonsprosess. &lt;br/&gt;Eventuelt at innlegging i databasen skjedde på et senere tidspunkt enn registreringen /observasjonen / målingen av objektet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="oppdateringsdato" type="date">
+            <annotation>
+              <documentation>Dato for siste endring på objektetdataene &lt;br/&gt;Merknad: 
+Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er registrert kan bufres en kortere eller lengre periode før disse legges inn i datasystemet (databasen).&lt;br/&gt;-Definition-&lt;br/&gt;Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="datauttaksdato" type="date">
+            <annotation>
+              <documentation>Dato for uttak fra en database&lt;br/&gt;Merknad:&lt;br/&gt;Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="temakvalitet" type="nydatakilde:TemakvalitetType">
+            <annotation>
+              <documentation>Kvaliteten på registrering/kartlegging av tema sett i forhold til faktiske forhold i naturen. Ulik tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets økonomi. Med nøyaktighet i denne sammenheng menes hvor korrekt registreringen avspeiler objektets posisjon i naturen og presisjonen i valg av tematisk innhold i forhold til generalisering
+&lt;br/&gt;Merknad: Tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets målsetning</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolPavisningstype" type="nydatakilde:GeolPavisningstypeType">
+            <annotation>
+              <documentation>Hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolPavisningstypeNavn" type="string">
+            <annotation>
+              <documentation>Hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kvalitet" type="nydatakilde:PosisjonskvalitetPropertyType"/>
+          <element minOccurs="0" name="medium" type="nydatakilde:MediumType">
+            <annotation>
+              <documentation>Objektets beliggenhet i forhold til jordoverflaten&lt;br/&gt;Eksempel:
+På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="mediumNavn" type="string">
+            <annotation>
+              <documentation>Objektets beliggenhet i forhold til jordoverflaten&lt;br/&gt;Eksempel:
+På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="opphav" type="string">
+            <annotation>
+              <documentation>Referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde
+&lt;br/&gt;Merknad: &lt;br/&gt;Kan også beskrive navn på person og årsak til oppdatering</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeolAvgrLinjePropertyType">
+    <sequence minOccurs="0">
+      <element ref="nydatakilde:GeolAvgrLinje"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="GeolPavisningstypeType">
+    <restriction base="string">
+      <enumeration value="0"/>
+      <enumeration value="1"/>
+      <enumeration value="10"/>
+      <enumeration value="11"/>
+      <enumeration value="12"/>
+      <enumeration value="13"/>
+      <enumeration value="14"/>
+      <enumeration value="2"/>
+      <enumeration value="21"/>
+      <enumeration value="22"/>
+      <enumeration value="23"/>
+      <enumeration value="24"/>
+      <enumeration value="25"/>
+      <enumeration value="26"/>
+      <enumeration value="27"/>
+      <enumeration value="28"/>
+      <enumeration value="29"/>
+      <enumeration value="3"/>
+      <enumeration value="30"/>
+      <enumeration value="31"/>
+      <enumeration value="32"/>
+      <enumeration value="4"/>
+      <enumeration value="5"/>
+      <enumeration value="6"/>
+      <enumeration value="7"/>
+      <enumeration value="8"/>
+      <enumeration value="9"/>
+    </restriction>
+  </simpleType>
+  <element name="Identifikasjon" substitutionGroup="gml:AbstractObject" type="nydatakilde:IdentifikasjonType"/>
+  <complexType name="IdentifikasjonType">
+    <sequence>
+      <element minOccurs="0" name="lokalId" type="string">
+        <annotation>
+          <documentation>Lokal identifikator, tildelt av dataleverendør/dataforvalter. Den lokale identifikatoren er unik innenfor navnerommet, ingen andre objekter har samme identifikator.&lt;br/&gt;NOTE: Det er data leverendørens ansvar å sørge for at denne lokale identifikatoren er unik innenfor navnerommet.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="navnerom" type="string">
+        <annotation>
+          <documentation>Navnerom som unikt identifiserer datakilden til objektet, starter med to bokstavs kode jfr ISO 3166. Benytter understreking  ("_") dersom data produsenten ikke er assosiert med bare et land.
+&lt;br/&gt;NOTE 1 : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og vil registreres i "INSPIRE external  Object Identifier Namespaces Register"&lt;br/&gt;Eksempel: NO for Norge.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="versjonId" type="string">
+        <annotation>
+          <documentation>Identifikasjon av en spesiell versjon av et geografisk objekt (instans), maksimum lengde på 25 karakterers. Dersom spesifikasjonen av et geografisk objekt med en identifikasjon inkludererer livsløpssyklusinformasjon, benyttes denne versjonId for å skille mellom ulike versjoner av samme objekt. versjonId er en unik  identifikasjon av versjonen. &lt;br/&gt;NOTE Maksimum lengde er valgt for å tillate tidsregistrering i henhold til  ISO 8601, slik som  "2007-02-12T12:12:12+05:30" som versjonId.</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="IdentifikasjonPropertyType">
+    <sequence>
+      <element ref="nydatakilde:Identifikasjon"/>
+    </sequence>
+  </complexType>
+  <element name="LosmasseFlate" substitutionGroup="gml:AbstractFeature" type="nydatakilde:LosmasseFlateType">
+    <annotation>
+      <documentation>Areal hvor løsmasser/sedimenter har samme kornstørrelse&lt;br/&gt;Merknad: &lt;br/&gt;Kornstørrelseflate må ha enten sedKornstorrelse eller losmKornstorrelse, sedKornstorrelse gjelder for kartlegging marint/i sjø - mens losmKornstorrelse gjelder for kartlegging på land.</documentation>
+    </annotation>
+  </element>
+  <complexType name="LosmasseFlateType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:SurfacePropertyType"/>
+          <element minOccurs="0" name="lokalid" type="string">
+            <annotation>
+              <documentation>lokalid</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="identifikasjon" type="nydatakilde:IdentifikasjonPropertyType"/>
+          <element name="datauttaksdato" type="date">
+            <annotation>
+              <documentation>Dato for uttak fra en database&lt;br/&gt;Merknad:&lt;br/&gt;Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="førsteDigitaliseringsdato" type="date">
+            <annotation>
+              <documentation>Dato når en representasjon av objektet i digital form første gang ble etablert&lt;br/&gt;Merknad: &lt;br/&gt;FørsteDigitaliseringsdato kan skille seg fra førsteDatafangstdato ved at den første datafangsten skjedde analogt og gjort om til digital form senere i en produksjonsprosess. &lt;br/&gt;Eventuelt at innlegging i databasen skjedde på et senere tidspunkt enn registreringen /observasjonen / målingen av objektet.</documentation>
+            </annotation>
+          </element>
+          <element name="losmassetype" type="nydatakilde:LosmassetypeType">
+            <annotation>
+              <documentation>Kvartærgeologiske løsmassetyper (jordartstyper)</documentation>
+            </annotation>
+          </element>
+          <element name="losmassetypeNavn" type="string">
+            <annotation>
+              <documentation>Kvartærgeologiske løsmassetyper (jordartstyper)</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LosmasseFlatePropertyType">
+    <sequence minOccurs="0">
+      <element ref="nydatakilde:LosmasseFlate"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="LosmasseGrense" substitutionGroup="gml:AbstractFeature" type="nydatakilde:LosmasseGrenseType">
+    <annotation>
+      <documentation>Avgrensning av ulike typer løsmasser (jordarter)</documentation>
+    </annotation>
+  </element>
+  <complexType name="LosmasseGrenseType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:CurvePropertyType"/>
+          <element minOccurs="0" name="lokalid" type="string">
+            <annotation>
+              <documentation>lokalid</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="identifikasjon" type="nydatakilde:IdentifikasjonPropertyType"/>
+          <element minOccurs="0" name="førsteDigitaliseringsdato" type="date">
+            <annotation>
+              <documentation>Dato når en representasjon av objektet i digital form første gang ble etablert&lt;br/&gt;Merknad: &lt;br/&gt;FørsteDigitaliseringsdato kan skille seg fra førsteDatafangstdato ved at den første datafangsten skjedde analogt og gjort om til digital form senere i en produksjonsprosess. &lt;br/&gt;Eventuelt at innlegging i databasen skjedde på et senere tidspunkt enn registreringen /observasjonen / målingen av objektet.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="oppdateringsdato" type="date">
+            <annotation>
+              <documentation>Dato for siste endring på objektetdataene &lt;br/&gt;Merknad: 
+Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er registrert kan bufres en kortere eller lengre periode før disse legges inn i datasystemet (databasen).&lt;br/&gt;-Definition-&lt;br/&gt;Date and time at which this version of the spatial object was inserted or changed in the spatial data set.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="datauttaksdato" type="date">
+            <annotation>
+              <documentation>Dato for uttak fra en database&lt;br/&gt;Merknad:&lt;br/&gt;Skiller seg fra Kopidato ved at en ikke skiller på om det er uttak fra en originaldatabase eller en kopidatabase.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="temakvalitet" type="nydatakilde:TemakvalitetType">
+            <annotation>
+              <documentation>Kvaliteten på registrering/kartlegging av tema sett i forhold til faktiske forhold i naturen. Ulik tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets økonomi. Med nøyaktighet i denne sammenheng menes hvor korrekt registreringen avspeiler objektets posisjon i naturen og presisjonen i valg av tematisk innhold i forhold til generalisering
+&lt;br/&gt;Merknad: Tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets målsetning</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolPavisningstype" type="nydatakilde:GeolPavisningstypeType">
+            <annotation>
+              <documentation>Hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="geolPavisningstypeNavn" type="string">
+            <annotation>
+              <documentation>Hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="kvalitet" type="nydatakilde:PosisjonskvalitetPropertyType"/>
+          <element minOccurs="0" name="medium" type="nydatakilde:MediumType">
+            <annotation>
+              <documentation>Objektets beliggenhet i forhold til jordoverflaten&lt;br/&gt;Eksempel:
+På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="mediumNavn" type="string">
+            <annotation>
+              <documentation>Objektets beliggenhet i forhold til jordoverflaten&lt;br/&gt;Eksempel:
+På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="opphav" type="string">
+            <annotation>
+              <documentation>Referanse til opphavsmaterialet, kildematerialet, organisasjons/publiseringskilde
+&lt;br/&gt;Merknad: &lt;br/&gt;Kan også beskrive navn på person og årsak til oppdatering</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LosmasseGrensePropertyType">
+    <sequence minOccurs="0">
+      <element ref="nydatakilde:LosmasseGrense"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="LosmassetypeType">
+    <restriction base="string">
+      <enumeration value="1"/>
+      <enumeration value="10"/>
+      <enumeration value="100"/>
+      <enumeration value="101"/>
+      <enumeration value="102"/>
+      <enumeration value="11"/>
+      <enumeration value="110"/>
+      <enumeration value="12"/>
+      <enumeration value="120"/>
+      <enumeration value="121"/>
+      <enumeration value="122"/>
+      <enumeration value="13"/>
+      <enumeration value="130"/>
+      <enumeration value="14"/>
+      <enumeration value="140"/>
+      <enumeration value="15"/>
+      <enumeration value="150"/>
+      <enumeration value="16"/>
+      <enumeration value="17"/>
+      <enumeration value="20"/>
+      <enumeration value="200"/>
+      <enumeration value="201"/>
+      <enumeration value="202"/>
+      <enumeration value="203"/>
+      <enumeration value="204"/>
+      <enumeration value="205"/>
+      <enumeration value="206"/>
+      <enumeration value="207"/>
+      <enumeration value="208"/>
+      <enumeration value="209"/>
+      <enumeration value="21"/>
+      <enumeration value="210"/>
+      <enumeration value="211"/>
+      <enumeration value="212"/>
+      <enumeration value="213"/>
+      <enumeration value="214"/>
+      <enumeration value="215"/>
+      <enumeration value="216"/>
+      <enumeration value="217"/>
+      <enumeration value="218"/>
+      <enumeration value="219"/>
+      <enumeration value="22"/>
+      <enumeration value="220"/>
+      <enumeration value="23"/>
+      <enumeration value="230"/>
+      <enumeration value="231"/>
+      <enumeration value="240"/>
+      <enumeration value="241"/>
+      <enumeration value="242"/>
+      <enumeration value="250"/>
+      <enumeration value="30"/>
+      <enumeration value="301"/>
+      <enumeration value="302"/>
+      <enumeration value="303"/>
+      <enumeration value="304"/>
+      <enumeration value="305"/>
+      <enumeration value="306"/>
+      <enumeration value="307"/>
+      <enumeration value="308"/>
+      <enumeration value="309"/>
+      <enumeration value="31"/>
+      <enumeration value="310"/>
+      <enumeration value="311"/>
+      <enumeration value="312"/>
+      <enumeration value="313"/>
+      <enumeration value="314"/>
+      <enumeration value="315"/>
+      <enumeration value="316"/>
+      <enumeration value="317"/>
+      <enumeration value="318"/>
+      <enumeration value="320"/>
+      <enumeration value="321"/>
+      <enumeration value="35"/>
+      <enumeration value="36"/>
+      <enumeration value="37"/>
+      <enumeration value="40"/>
+      <enumeration value="41"/>
+      <enumeration value="42"/>
+      <enumeration value="43"/>
+      <enumeration value="44"/>
+      <enumeration value="45"/>
+      <enumeration value="50"/>
+      <enumeration value="51"/>
+      <enumeration value="52"/>
+      <enumeration value="53"/>
+      <enumeration value="54"/>
+      <enumeration value="55"/>
+      <enumeration value="56"/>
+      <enumeration value="57"/>
+      <enumeration value="60"/>
+      <enumeration value="70"/>
+      <enumeration value="71"/>
+      <enumeration value="72"/>
+      <enumeration value="73"/>
+      <enumeration value="80"/>
+      <enumeration value="81"/>
+      <enumeration value="82"/>
+      <enumeration value="88"/>
+      <enumeration value="90"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="MediumType">
+    <restriction base="string">
+      <enumeration value="B"/>
+      <enumeration value="D"/>
+      <enumeration value="I"/>
+      <enumeration value="J"/>
+      <enumeration value="L"/>
+      <enumeration value="O"/>
+      <enumeration value="S"/>
+      <enumeration value="T"/>
+      <enumeration value="U"/>
+      <enumeration value="V"/>
+      <enumeration value="W"/>
+      <enumeration value="X"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="MålemetodeType">
+    <restriction base="string">
+      <enumeration value="10"/>
+      <enumeration value="11"/>
+      <enumeration value="12"/>
+      <enumeration value="13"/>
+      <enumeration value="14"/>
+      <enumeration value="15"/>
+      <enumeration value="18"/>
+      <enumeration value="19"/>
+      <enumeration value="20"/>
+      <enumeration value="21"/>
+      <enumeration value="22"/>
+      <enumeration value="23"/>
+      <enumeration value="24"/>
+      <enumeration value="30"/>
+      <enumeration value="31"/>
+      <enumeration value="32"/>
+      <enumeration value="33"/>
+      <enumeration value="34"/>
+      <enumeration value="35"/>
+      <enumeration value="36"/>
+      <enumeration value="37"/>
+      <enumeration value="38"/>
+      <enumeration value="40"/>
+      <enumeration value="41"/>
+      <enumeration value="42"/>
+      <enumeration value="43"/>
+      <enumeration value="44"/>
+      <enumeration value="45"/>
+      <enumeration value="46"/>
+      <enumeration value="47"/>
+      <enumeration value="48"/>
+      <enumeration value="49"/>
+      <enumeration value="50"/>
+      <enumeration value="51"/>
+      <enumeration value="52"/>
+      <enumeration value="53"/>
+      <enumeration value="54"/>
+      <enumeration value="55"/>
+      <enumeration value="56"/>
+      <enumeration value="60"/>
+      <enumeration value="61"/>
+      <enumeration value="62"/>
+      <enumeration value="63"/>
+      <enumeration value="64"/>
+      <enumeration value="65"/>
+      <enumeration value="66"/>
+      <enumeration value="67"/>
+      <enumeration value="68"/>
+      <enumeration value="69"/>
+      <enumeration value="70"/>
+      <enumeration value="71"/>
+      <enumeration value="72"/>
+      <enumeration value="73"/>
+      <enumeration value="74"/>
+      <enumeration value="77"/>
+      <enumeration value="78"/>
+      <enumeration value="79"/>
+      <enumeration value="80"/>
+      <enumeration value="81"/>
+      <enumeration value="82"/>
+      <enumeration value="90"/>
+      <enumeration value="91"/>
+      <enumeration value="92"/>
+      <enumeration value="93"/>
+      <enumeration value="94"/>
+      <enumeration value="95"/>
+      <enumeration value="96"/>
+      <enumeration value="97"/>
+      <enumeration value="99"/>
+    </restriction>
+  </simpleType>
+  <element name="Posisjonskvalitet" substitutionGroup="gml:AbstractObject" type="nydatakilde:PosisjonskvalitetType"/>
+  <complexType name="PosisjonskvalitetType">
+    <sequence>
+      <element minOccurs="0" name="målemetode" type="nydatakilde:MålemetodeType">
+        <annotation>
+          <documentation>Kode på metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="målemetodeNavn" type="string">
+        <annotation>
+          <documentation>Navn på metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="nøyaktighet" type="integer">
+        <annotation>
+          <documentation>Punktstandardavviket i grunnriss for punkter samt tverravvik for linjer&lt;br/&gt;Merknad:&lt;br/&gt;Oppgitt i cm</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="PosisjonskvalitetPropertyType">
+    <sequence>
+      <element ref="nydatakilde:Posisjonskvalitet"/>
+    </sequence>
+  </complexType>
+  <simpleType name="TemakvalitetType">
+    <restriction base="string">
+      <enumeration value="dårlig"/>
+      <enumeration value="god"/>
+      <enumeration value="megetGod"/>
+      <enumeration value="noeDårlig"/>
+      <enumeration value="noksåGod"/>
+      <enumeration value="særdelesGod"/>
+    </restriction>
+  </simpleType>
+</schema>

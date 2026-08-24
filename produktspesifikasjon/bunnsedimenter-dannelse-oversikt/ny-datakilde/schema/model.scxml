@@ -139,7 +139,8 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>7</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C8</sc:typeId>
+       <sc:typeName>Temakvalitet</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>geolPavisningstype</sc:name>
@@ -153,7 +154,8 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>8</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C9</sc:typeId>
+       <sc:typeName>GeolPavisningstype</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>geolPavisningstypeNavn</sc:name>
@@ -190,7 +192,8 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</sc:DescriptorValue>
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>11</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C11</sc:typeId>
+       <sc:typeName>Medium</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>mediumNavn</sc:name>
@@ -353,7 +356,8 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>7</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C8</sc:typeId>
+       <sc:typeName>Temakvalitet</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>geolPavisningstype</sc:name>
@@ -367,7 +371,8 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>8</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C9</sc:typeId>
+       <sc:typeName>GeolPavisningstype</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>geolPavisningstypeNavn</sc:name>
@@ -404,7 +409,8 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</sc:DescriptorValue>
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>11</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C11</sc:typeId>
+       <sc:typeName>Medium</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>mediumNavn</sc:name>
@@ -521,7 +527,8 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</sc:DescriptorValue>
        </sc:descriptors>
        <sc:cardinality>1</sc:cardinality>
        <sc:sequenceNumber>6</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C12</sc:typeId>
+       <sc:typeName>Losmassetype</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>losmassetypeNavn</sc:name>
@@ -638,7 +645,8 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>7</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C8</sc:typeId>
+       <sc:typeName>Temakvalitet</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>geolPavisningstype</sc:name>
@@ -652,7 +660,8 @@ Oppdateringsdato kan være forskjellig fra Datafangsdato ved at data som er regi
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>8</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C9</sc:typeId>
+       <sc:typeName>GeolPavisningstype</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>geolPavisningstypeNavn</sc:name>
@@ -689,7 +698,8 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</sc:DescriptorValue>
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>11</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C11</sc:typeId>
+       <sc:typeName>Medium</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>mediumNavn</sc:name>
@@ -794,7 +804,8 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</sc:DescriptorValue>
        </sc:descriptors>
        <sc:cardinality>0..1</sc:cardinality>
        <sc:sequenceNumber>1</sc:sequenceNumber>
-       <sc:typeName>CharacterString</sc:typeName>
+       <sc:typeId>C10</sc:typeId>
+       <sc:typeName>Målemetode</sc:typeName>
       </sc:Property>
       <sc:Property>
        <sc:name>målemetodeNavn</sc:name>
@@ -827,7 +838,7 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</sc:DescriptorValue>
      </sc:properties>
     </sc:Class>
     <sc:Class>
-     <sc:name>string</sc:name>
+     <sc:name>Temakvalitet</sc:name>
      <sc:id>C8</sc:id>
      <sc:stereotypes>
       <sc:Stereotype>enumeration</sc:Stereotype>
@@ -863,790 +874,1076 @@ På bro, i tunnel, inne i et bygningsmessig anlegg, etc.</sc:DescriptorValue>
        <sc:id>C8_6</sc:id>
        <sc:sequenceNumber>6</sc:sequenceNumber>
       </sc:Property>
+     </sc:properties>
+    </sc:Class>
+    <sc:Class>
+     <sc:name>GeolPavisningstype</sc:name>
+     <sc:id>C9</sc:id>
+     <sc:stereotypes>
+      <sc:Stereotype>enumeration</sc:Stereotype>
+     </sc:stereotypes>
+     <sc:properties>
       <sc:Property>
        <sc:name>0</sc:name>
-       <sc:id>C8_7</sc:id>
-       <sc:sequenceNumber>7</sc:sequenceNumber>
+       <sc:id>C9_1</sc:id>
+       <sc:sequenceNumber>1</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
        <sc:name>1</sc:name>
-       <sc:id>C8_8</sc:id>
-       <sc:sequenceNumber>8</sc:sequenceNumber>
+       <sc:id>C9_2</sc:id>
+       <sc:sequenceNumber>2</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
        <sc:name>10</sc:name>
-       <sc:id>C8_9</sc:id>
-       <sc:sequenceNumber>9</sc:sequenceNumber>
+       <sc:id>C9_3</sc:id>
+       <sc:sequenceNumber>3</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
        <sc:name>11</sc:name>
-       <sc:id>C8_10</sc:id>
-       <sc:sequenceNumber>10</sc:sequenceNumber>
+       <sc:id>C9_4</sc:id>
+       <sc:sequenceNumber>4</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
        <sc:name>12</sc:name>
-       <sc:id>C8_11</sc:id>
+       <sc:id>C9_5</sc:id>
+       <sc:sequenceNumber>5</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>13</sc:name>
+       <sc:id>C9_6</sc:id>
+       <sc:sequenceNumber>6</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>14</sc:name>
+       <sc:id>C9_7</sc:id>
+       <sc:sequenceNumber>7</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>2</sc:name>
+       <sc:id>C9_8</sc:id>
+       <sc:sequenceNumber>8</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>21</sc:name>
+       <sc:id>C9_9</sc:id>
+       <sc:sequenceNumber>9</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>22</sc:name>
+       <sc:id>C9_10</sc:id>
+       <sc:sequenceNumber>10</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>23</sc:name>
+       <sc:id>C9_11</sc:id>
+       <sc:sequenceNumber>11</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>24</sc:name>
+       <sc:id>C9_12</sc:id>
+       <sc:sequenceNumber>12</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>25</sc:name>
+       <sc:id>C9_13</sc:id>
+       <sc:sequenceNumber>13</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>26</sc:name>
+       <sc:id>C9_14</sc:id>
+       <sc:sequenceNumber>14</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>27</sc:name>
+       <sc:id>C9_15</sc:id>
+       <sc:sequenceNumber>15</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>28</sc:name>
+       <sc:id>C9_16</sc:id>
+       <sc:sequenceNumber>16</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>29</sc:name>
+       <sc:id>C9_17</sc:id>
+       <sc:sequenceNumber>17</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>3</sc:name>
+       <sc:id>C9_18</sc:id>
+       <sc:sequenceNumber>18</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>30</sc:name>
+       <sc:id>C9_19</sc:id>
+       <sc:sequenceNumber>19</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>31</sc:name>
+       <sc:id>C9_20</sc:id>
+       <sc:sequenceNumber>20</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>32</sc:name>
+       <sc:id>C9_21</sc:id>
+       <sc:sequenceNumber>21</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>4</sc:name>
+       <sc:id>C9_22</sc:id>
+       <sc:sequenceNumber>22</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>5</sc:name>
+       <sc:id>C9_23</sc:id>
+       <sc:sequenceNumber>23</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>6</sc:name>
+       <sc:id>C9_24</sc:id>
+       <sc:sequenceNumber>24</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>7</sc:name>
+       <sc:id>C9_25</sc:id>
+       <sc:sequenceNumber>25</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>8</sc:name>
+       <sc:id>C9_26</sc:id>
+       <sc:sequenceNumber>26</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>9</sc:name>
+       <sc:id>C9_27</sc:id>
+       <sc:sequenceNumber>27</sc:sequenceNumber>
+      </sc:Property>
+     </sc:properties>
+    </sc:Class>
+    <sc:Class>
+     <sc:name>Målemetode</sc:name>
+     <sc:id>C10</sc:id>
+     <sc:stereotypes>
+      <sc:Stereotype>enumeration</sc:Stereotype>
+     </sc:stereotypes>
+     <sc:properties>
+      <sc:Property>
+       <sc:name>10</sc:name>
+       <sc:id>C10_1</sc:id>
+       <sc:sequenceNumber>1</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>11</sc:name>
+       <sc:id>C10_2</sc:id>
+       <sc:sequenceNumber>2</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>12</sc:name>
+       <sc:id>C10_3</sc:id>
+       <sc:sequenceNumber>3</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>13</sc:name>
+       <sc:id>C10_4</sc:id>
+       <sc:sequenceNumber>4</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>14</sc:name>
+       <sc:id>C10_5</sc:id>
+       <sc:sequenceNumber>5</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>15</sc:name>
+       <sc:id>C10_6</sc:id>
+       <sc:sequenceNumber>6</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>18</sc:name>
+       <sc:id>C10_7</sc:id>
+       <sc:sequenceNumber>7</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>19</sc:name>
+       <sc:id>C10_8</sc:id>
+       <sc:sequenceNumber>8</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>20</sc:name>
+       <sc:id>C10_9</sc:id>
+       <sc:sequenceNumber>9</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>21</sc:name>
+       <sc:id>C10_10</sc:id>
+       <sc:sequenceNumber>10</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>22</sc:name>
+       <sc:id>C10_11</sc:id>
+       <sc:sequenceNumber>11</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>23</sc:name>
+       <sc:id>C10_12</sc:id>
+       <sc:sequenceNumber>12</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>24</sc:name>
+       <sc:id>C10_13</sc:id>
+       <sc:sequenceNumber>13</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>30</sc:name>
+       <sc:id>C10_14</sc:id>
+       <sc:sequenceNumber>14</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>31</sc:name>
+       <sc:id>C10_15</sc:id>
+       <sc:sequenceNumber>15</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>32</sc:name>
+       <sc:id>C10_16</sc:id>
+       <sc:sequenceNumber>16</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>33</sc:name>
+       <sc:id>C10_17</sc:id>
+       <sc:sequenceNumber>17</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>34</sc:name>
+       <sc:id>C10_18</sc:id>
+       <sc:sequenceNumber>18</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>35</sc:name>
+       <sc:id>C10_19</sc:id>
+       <sc:sequenceNumber>19</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>36</sc:name>
+       <sc:id>C10_20</sc:id>
+       <sc:sequenceNumber>20</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>37</sc:name>
+       <sc:id>C10_21</sc:id>
+       <sc:sequenceNumber>21</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>38</sc:name>
+       <sc:id>C10_22</sc:id>
+       <sc:sequenceNumber>22</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>40</sc:name>
+       <sc:id>C10_23</sc:id>
+       <sc:sequenceNumber>23</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>41</sc:name>
+       <sc:id>C10_24</sc:id>
+       <sc:sequenceNumber>24</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>42</sc:name>
+       <sc:id>C10_25</sc:id>
+       <sc:sequenceNumber>25</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>43</sc:name>
+       <sc:id>C10_26</sc:id>
+       <sc:sequenceNumber>26</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>44</sc:name>
+       <sc:id>C10_27</sc:id>
+       <sc:sequenceNumber>27</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>45</sc:name>
+       <sc:id>C10_28</sc:id>
+       <sc:sequenceNumber>28</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>46</sc:name>
+       <sc:id>C10_29</sc:id>
+       <sc:sequenceNumber>29</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>47</sc:name>
+       <sc:id>C10_30</sc:id>
+       <sc:sequenceNumber>30</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>48</sc:name>
+       <sc:id>C10_31</sc:id>
+       <sc:sequenceNumber>31</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>49</sc:name>
+       <sc:id>C10_32</sc:id>
+       <sc:sequenceNumber>32</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>50</sc:name>
+       <sc:id>C10_33</sc:id>
+       <sc:sequenceNumber>33</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>51</sc:name>
+       <sc:id>C10_34</sc:id>
+       <sc:sequenceNumber>34</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>52</sc:name>
+       <sc:id>C10_35</sc:id>
+       <sc:sequenceNumber>35</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>53</sc:name>
+       <sc:id>C10_36</sc:id>
+       <sc:sequenceNumber>36</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>54</sc:name>
+       <sc:id>C10_37</sc:id>
+       <sc:sequenceNumber>37</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>55</sc:name>
+       <sc:id>C10_38</sc:id>
+       <sc:sequenceNumber>38</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>56</sc:name>
+       <sc:id>C10_39</sc:id>
+       <sc:sequenceNumber>39</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>60</sc:name>
+       <sc:id>C10_40</sc:id>
+       <sc:sequenceNumber>40</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>61</sc:name>
+       <sc:id>C10_41</sc:id>
+       <sc:sequenceNumber>41</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>62</sc:name>
+       <sc:id>C10_42</sc:id>
+       <sc:sequenceNumber>42</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>63</sc:name>
+       <sc:id>C10_43</sc:id>
+       <sc:sequenceNumber>43</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>64</sc:name>
+       <sc:id>C10_44</sc:id>
+       <sc:sequenceNumber>44</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>65</sc:name>
+       <sc:id>C10_45</sc:id>
+       <sc:sequenceNumber>45</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>66</sc:name>
+       <sc:id>C10_46</sc:id>
+       <sc:sequenceNumber>46</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>67</sc:name>
+       <sc:id>C10_47</sc:id>
+       <sc:sequenceNumber>47</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>68</sc:name>
+       <sc:id>C10_48</sc:id>
+       <sc:sequenceNumber>48</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>69</sc:name>
+       <sc:id>C10_49</sc:id>
+       <sc:sequenceNumber>49</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>70</sc:name>
+       <sc:id>C10_50</sc:id>
+       <sc:sequenceNumber>50</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>71</sc:name>
+       <sc:id>C10_51</sc:id>
+       <sc:sequenceNumber>51</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>72</sc:name>
+       <sc:id>C10_52</sc:id>
+       <sc:sequenceNumber>52</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>73</sc:name>
+       <sc:id>C10_53</sc:id>
+       <sc:sequenceNumber>53</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>74</sc:name>
+       <sc:id>C10_54</sc:id>
+       <sc:sequenceNumber>54</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>77</sc:name>
+       <sc:id>C10_55</sc:id>
+       <sc:sequenceNumber>55</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>78</sc:name>
+       <sc:id>C10_56</sc:id>
+       <sc:sequenceNumber>56</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>79</sc:name>
+       <sc:id>C10_57</sc:id>
+       <sc:sequenceNumber>57</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>80</sc:name>
+       <sc:id>C10_58</sc:id>
+       <sc:sequenceNumber>58</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>81</sc:name>
+       <sc:id>C10_59</sc:id>
+       <sc:sequenceNumber>59</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>82</sc:name>
+       <sc:id>C10_60</sc:id>
+       <sc:sequenceNumber>60</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>90</sc:name>
+       <sc:id>C10_61</sc:id>
+       <sc:sequenceNumber>61</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>91</sc:name>
+       <sc:id>C10_62</sc:id>
+       <sc:sequenceNumber>62</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>92</sc:name>
+       <sc:id>C10_63</sc:id>
+       <sc:sequenceNumber>63</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>93</sc:name>
+       <sc:id>C10_64</sc:id>
+       <sc:sequenceNumber>64</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>94</sc:name>
+       <sc:id>C10_65</sc:id>
+       <sc:sequenceNumber>65</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>95</sc:name>
+       <sc:id>C10_66</sc:id>
+       <sc:sequenceNumber>66</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>96</sc:name>
+       <sc:id>C10_67</sc:id>
+       <sc:sequenceNumber>67</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>97</sc:name>
+       <sc:id>C10_68</sc:id>
+       <sc:sequenceNumber>68</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>99</sc:name>
+       <sc:id>C10_69</sc:id>
+       <sc:sequenceNumber>69</sc:sequenceNumber>
+      </sc:Property>
+     </sc:properties>
+    </sc:Class>
+    <sc:Class>
+     <sc:name>Medium</sc:name>
+     <sc:id>C11</sc:id>
+     <sc:stereotypes>
+      <sc:Stereotype>enumeration</sc:Stereotype>
+     </sc:stereotypes>
+     <sc:properties>
+      <sc:Property>
+       <sc:name>B</sc:name>
+       <sc:id>C11_1</sc:id>
+       <sc:sequenceNumber>1</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>D</sc:name>
+       <sc:id>C11_2</sc:id>
+       <sc:sequenceNumber>2</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>I</sc:name>
+       <sc:id>C11_3</sc:id>
+       <sc:sequenceNumber>3</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>J</sc:name>
+       <sc:id>C11_4</sc:id>
+       <sc:sequenceNumber>4</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>L</sc:name>
+       <sc:id>C11_5</sc:id>
+       <sc:sequenceNumber>5</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>O</sc:name>
+       <sc:id>C11_6</sc:id>
+       <sc:sequenceNumber>6</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>S</sc:name>
+       <sc:id>C11_7</sc:id>
+       <sc:sequenceNumber>7</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>T</sc:name>
+       <sc:id>C11_8</sc:id>
+       <sc:sequenceNumber>8</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>U</sc:name>
+       <sc:id>C11_9</sc:id>
+       <sc:sequenceNumber>9</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>V</sc:name>
+       <sc:id>C11_10</sc:id>
+       <sc:sequenceNumber>10</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>W</sc:name>
+       <sc:id>C11_11</sc:id>
+       <sc:sequenceNumber>11</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>X</sc:name>
+       <sc:id>C11_12</sc:id>
+       <sc:sequenceNumber>12</sc:sequenceNumber>
+      </sc:Property>
+     </sc:properties>
+    </sc:Class>
+    <sc:Class>
+     <sc:name>Losmassetype</sc:name>
+     <sc:id>C12</sc:id>
+     <sc:stereotypes>
+      <sc:Stereotype>enumeration</sc:Stereotype>
+     </sc:stereotypes>
+     <sc:properties>
+      <sc:Property>
+       <sc:name>1</sc:name>
+       <sc:id>C12_1</sc:id>
+       <sc:sequenceNumber>1</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>10</sc:name>
+       <sc:id>C12_2</sc:id>
+       <sc:sequenceNumber>2</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>100</sc:name>
+       <sc:id>C12_3</sc:id>
+       <sc:sequenceNumber>3</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>101</sc:name>
+       <sc:id>C12_4</sc:id>
+       <sc:sequenceNumber>4</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>102</sc:name>
+       <sc:id>C12_5</sc:id>
+       <sc:sequenceNumber>5</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>11</sc:name>
+       <sc:id>C12_6</sc:id>
+       <sc:sequenceNumber>6</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>110</sc:name>
+       <sc:id>C12_7</sc:id>
+       <sc:sequenceNumber>7</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>12</sc:name>
+       <sc:id>C12_8</sc:id>
+       <sc:sequenceNumber>8</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>120</sc:name>
+       <sc:id>C12_9</sc:id>
+       <sc:sequenceNumber>9</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>121</sc:name>
+       <sc:id>C12_10</sc:id>
+       <sc:sequenceNumber>10</sc:sequenceNumber>
+      </sc:Property>
+      <sc:Property>
+       <sc:name>122</sc:name>
+       <sc:id>C12_11</sc:id>
        <sc:sequenceNumber>11</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
        <sc:name>13</sc:name>
-       <sc:id>C8_12</sc:id>
+       <sc:id>C12_12</sc:id>
        <sc:sequenceNumber>12</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>14</sc:name>
-       <sc:id>C8_13</sc:id>
+       <sc:name>130</sc:name>
+       <sc:id>C12_13</sc:id>
        <sc:sequenceNumber>13</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>2</sc:name>
-       <sc:id>C8_14</sc:id>
+       <sc:name>14</sc:name>
+       <sc:id>C12_14</sc:id>
        <sc:sequenceNumber>14</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>21</sc:name>
-       <sc:id>C8_15</sc:id>
+       <sc:name>140</sc:name>
+       <sc:id>C12_15</sc:id>
        <sc:sequenceNumber>15</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>22</sc:name>
-       <sc:id>C8_16</sc:id>
+       <sc:name>15</sc:name>
+       <sc:id>C12_16</sc:id>
        <sc:sequenceNumber>16</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>23</sc:name>
-       <sc:id>C8_17</sc:id>
+       <sc:name>150</sc:name>
+       <sc:id>C12_17</sc:id>
        <sc:sequenceNumber>17</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>24</sc:name>
-       <sc:id>C8_18</sc:id>
+       <sc:name>16</sc:name>
+       <sc:id>C12_18</sc:id>
        <sc:sequenceNumber>18</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>25</sc:name>
-       <sc:id>C8_19</sc:id>
+       <sc:name>17</sc:name>
+       <sc:id>C12_19</sc:id>
        <sc:sequenceNumber>19</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>26</sc:name>
-       <sc:id>C8_20</sc:id>
+       <sc:name>20</sc:name>
+       <sc:id>C12_20</sc:id>
        <sc:sequenceNumber>20</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>27</sc:name>
-       <sc:id>C8_21</sc:id>
+       <sc:name>200</sc:name>
+       <sc:id>C12_21</sc:id>
        <sc:sequenceNumber>21</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>28</sc:name>
-       <sc:id>C8_22</sc:id>
+       <sc:name>201</sc:name>
+       <sc:id>C12_22</sc:id>
        <sc:sequenceNumber>22</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>29</sc:name>
-       <sc:id>C8_23</sc:id>
+       <sc:name>202</sc:name>
+       <sc:id>C12_23</sc:id>
        <sc:sequenceNumber>23</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>3</sc:name>
-       <sc:id>C8_24</sc:id>
+       <sc:name>203</sc:name>
+       <sc:id>C12_24</sc:id>
        <sc:sequenceNumber>24</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>30</sc:name>
-       <sc:id>C8_25</sc:id>
+       <sc:name>204</sc:name>
+       <sc:id>C12_25</sc:id>
        <sc:sequenceNumber>25</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>31</sc:name>
-       <sc:id>C8_26</sc:id>
+       <sc:name>205</sc:name>
+       <sc:id>C12_26</sc:id>
        <sc:sequenceNumber>26</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>32</sc:name>
-       <sc:id>C8_27</sc:id>
+       <sc:name>206</sc:name>
+       <sc:id>C12_27</sc:id>
        <sc:sequenceNumber>27</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>4</sc:name>
-       <sc:id>C8_28</sc:id>
+       <sc:name>207</sc:name>
+       <sc:id>C12_28</sc:id>
        <sc:sequenceNumber>28</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>5</sc:name>
-       <sc:id>C8_29</sc:id>
+       <sc:name>208</sc:name>
+       <sc:id>C12_29</sc:id>
        <sc:sequenceNumber>29</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>6</sc:name>
-       <sc:id>C8_30</sc:id>
+       <sc:name>209</sc:name>
+       <sc:id>C12_30</sc:id>
        <sc:sequenceNumber>30</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>7</sc:name>
-       <sc:id>C8_31</sc:id>
+       <sc:name>21</sc:name>
+       <sc:id>C12_31</sc:id>
        <sc:sequenceNumber>31</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>8</sc:name>
-       <sc:id>C8_32</sc:id>
+       <sc:name>210</sc:name>
+       <sc:id>C12_32</sc:id>
        <sc:sequenceNumber>32</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>9</sc:name>
-       <sc:id>C8_33</sc:id>
+       <sc:name>211</sc:name>
+       <sc:id>C12_33</sc:id>
        <sc:sequenceNumber>33</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>15</sc:name>
-       <sc:id>C8_34</sc:id>
+       <sc:name>212</sc:name>
+       <sc:id>C12_34</sc:id>
        <sc:sequenceNumber>34</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>18</sc:name>
-       <sc:id>C8_35</sc:id>
+       <sc:name>213</sc:name>
+       <sc:id>C12_35</sc:id>
        <sc:sequenceNumber>35</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>19</sc:name>
-       <sc:id>C8_36</sc:id>
+       <sc:name>214</sc:name>
+       <sc:id>C12_36</sc:id>
        <sc:sequenceNumber>36</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>20</sc:name>
-       <sc:id>C8_37</sc:id>
+       <sc:name>215</sc:name>
+       <sc:id>C12_37</sc:id>
        <sc:sequenceNumber>37</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>33</sc:name>
-       <sc:id>C8_38</sc:id>
+       <sc:name>216</sc:name>
+       <sc:id>C12_38</sc:id>
        <sc:sequenceNumber>38</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>34</sc:name>
-       <sc:id>C8_39</sc:id>
+       <sc:name>217</sc:name>
+       <sc:id>C12_39</sc:id>
        <sc:sequenceNumber>39</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>35</sc:name>
-       <sc:id>C8_40</sc:id>
+       <sc:name>218</sc:name>
+       <sc:id>C12_40</sc:id>
        <sc:sequenceNumber>40</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>36</sc:name>
-       <sc:id>C8_41</sc:id>
+       <sc:name>219</sc:name>
+       <sc:id>C12_41</sc:id>
        <sc:sequenceNumber>41</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>37</sc:name>
-       <sc:id>C8_42</sc:id>
+       <sc:name>22</sc:name>
+       <sc:id>C12_42</sc:id>
        <sc:sequenceNumber>42</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>38</sc:name>
-       <sc:id>C8_43</sc:id>
+       <sc:name>220</sc:name>
+       <sc:id>C12_43</sc:id>
        <sc:sequenceNumber>43</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>40</sc:name>
-       <sc:id>C8_44</sc:id>
+       <sc:name>23</sc:name>
+       <sc:id>C12_44</sc:id>
        <sc:sequenceNumber>44</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>41</sc:name>
-       <sc:id>C8_45</sc:id>
+       <sc:name>230</sc:name>
+       <sc:id>C12_45</sc:id>
        <sc:sequenceNumber>45</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>42</sc:name>
-       <sc:id>C8_46</sc:id>
+       <sc:name>231</sc:name>
+       <sc:id>C12_46</sc:id>
        <sc:sequenceNumber>46</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>43</sc:name>
-       <sc:id>C8_47</sc:id>
+       <sc:name>240</sc:name>
+       <sc:id>C12_47</sc:id>
        <sc:sequenceNumber>47</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>44</sc:name>
-       <sc:id>C8_48</sc:id>
+       <sc:name>241</sc:name>
+       <sc:id>C12_48</sc:id>
        <sc:sequenceNumber>48</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>45</sc:name>
-       <sc:id>C8_49</sc:id>
+       <sc:name>242</sc:name>
+       <sc:id>C12_49</sc:id>
        <sc:sequenceNumber>49</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>46</sc:name>
-       <sc:id>C8_50</sc:id>
+       <sc:name>250</sc:name>
+       <sc:id>C12_50</sc:id>
        <sc:sequenceNumber>50</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>47</sc:name>
-       <sc:id>C8_51</sc:id>
+       <sc:name>30</sc:name>
+       <sc:id>C12_51</sc:id>
        <sc:sequenceNumber>51</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>48</sc:name>
-       <sc:id>C8_52</sc:id>
+       <sc:name>301</sc:name>
+       <sc:id>C12_52</sc:id>
        <sc:sequenceNumber>52</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>49</sc:name>
-       <sc:id>C8_53</sc:id>
+       <sc:name>302</sc:name>
+       <sc:id>C12_53</sc:id>
        <sc:sequenceNumber>53</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>50</sc:name>
-       <sc:id>C8_54</sc:id>
+       <sc:name>303</sc:name>
+       <sc:id>C12_54</sc:id>
        <sc:sequenceNumber>54</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>51</sc:name>
-       <sc:id>C8_55</sc:id>
+       <sc:name>304</sc:name>
+       <sc:id>C12_55</sc:id>
        <sc:sequenceNumber>55</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>52</sc:name>
-       <sc:id>C8_56</sc:id>
+       <sc:name>305</sc:name>
+       <sc:id>C12_56</sc:id>
        <sc:sequenceNumber>56</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>53</sc:name>
-       <sc:id>C8_57</sc:id>
+       <sc:name>306</sc:name>
+       <sc:id>C12_57</sc:id>
        <sc:sequenceNumber>57</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>54</sc:name>
-       <sc:id>C8_58</sc:id>
+       <sc:name>307</sc:name>
+       <sc:id>C12_58</sc:id>
        <sc:sequenceNumber>58</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>55</sc:name>
-       <sc:id>C8_59</sc:id>
+       <sc:name>308</sc:name>
+       <sc:id>C12_59</sc:id>
        <sc:sequenceNumber>59</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>56</sc:name>
-       <sc:id>C8_60</sc:id>
+       <sc:name>309</sc:name>
+       <sc:id>C12_60</sc:id>
        <sc:sequenceNumber>60</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>60</sc:name>
-       <sc:id>C8_61</sc:id>
+       <sc:name>31</sc:name>
+       <sc:id>C12_61</sc:id>
        <sc:sequenceNumber>61</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>61</sc:name>
-       <sc:id>C8_62</sc:id>
+       <sc:name>310</sc:name>
+       <sc:id>C12_62</sc:id>
        <sc:sequenceNumber>62</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>62</sc:name>
-       <sc:id>C8_63</sc:id>
+       <sc:name>311</sc:name>
+       <sc:id>C12_63</sc:id>
        <sc:sequenceNumber>63</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>63</sc:name>
-       <sc:id>C8_64</sc:id>
+       <sc:name>312</sc:name>
+       <sc:id>C12_64</sc:id>
        <sc:sequenceNumber>64</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>64</sc:name>
-       <sc:id>C8_65</sc:id>
+       <sc:name>313</sc:name>
+       <sc:id>C12_65</sc:id>
        <sc:sequenceNumber>65</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>65</sc:name>
-       <sc:id>C8_66</sc:id>
+       <sc:name>314</sc:name>
+       <sc:id>C12_66</sc:id>
        <sc:sequenceNumber>66</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>66</sc:name>
-       <sc:id>C8_67</sc:id>
+       <sc:name>315</sc:name>
+       <sc:id>C12_67</sc:id>
        <sc:sequenceNumber>67</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>67</sc:name>
-       <sc:id>C8_68</sc:id>
+       <sc:name>316</sc:name>
+       <sc:id>C12_68</sc:id>
        <sc:sequenceNumber>68</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>68</sc:name>
-       <sc:id>C8_69</sc:id>
+       <sc:name>317</sc:name>
+       <sc:id>C12_69</sc:id>
        <sc:sequenceNumber>69</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>69</sc:name>
-       <sc:id>C8_70</sc:id>
+       <sc:name>318</sc:name>
+       <sc:id>C12_70</sc:id>
        <sc:sequenceNumber>70</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>70</sc:name>
-       <sc:id>C8_71</sc:id>
+       <sc:name>320</sc:name>
+       <sc:id>C12_71</sc:id>
        <sc:sequenceNumber>71</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>71</sc:name>
-       <sc:id>C8_72</sc:id>
+       <sc:name>321</sc:name>
+       <sc:id>C12_72</sc:id>
        <sc:sequenceNumber>72</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>72</sc:name>
-       <sc:id>C8_73</sc:id>
+       <sc:name>35</sc:name>
+       <sc:id>C12_73</sc:id>
        <sc:sequenceNumber>73</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>73</sc:name>
-       <sc:id>C8_74</sc:id>
+       <sc:name>36</sc:name>
+       <sc:id>C12_74</sc:id>
        <sc:sequenceNumber>74</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>74</sc:name>
-       <sc:id>C8_75</sc:id>
+       <sc:name>37</sc:name>
+       <sc:id>C12_75</sc:id>
        <sc:sequenceNumber>75</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>77</sc:name>
-       <sc:id>C8_76</sc:id>
+       <sc:name>40</sc:name>
+       <sc:id>C12_76</sc:id>
        <sc:sequenceNumber>76</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>78</sc:name>
-       <sc:id>C8_77</sc:id>
+       <sc:name>41</sc:name>
+       <sc:id>C12_77</sc:id>
        <sc:sequenceNumber>77</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>79</sc:name>
-       <sc:id>C8_78</sc:id>
+       <sc:name>42</sc:name>
+       <sc:id>C12_78</sc:id>
        <sc:sequenceNumber>78</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>80</sc:name>
-       <sc:id>C8_79</sc:id>
+       <sc:name>43</sc:name>
+       <sc:id>C12_79</sc:id>
        <sc:sequenceNumber>79</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>81</sc:name>
-       <sc:id>C8_80</sc:id>
+       <sc:name>44</sc:name>
+       <sc:id>C12_80</sc:id>
        <sc:sequenceNumber>80</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>82</sc:name>
-       <sc:id>C8_81</sc:id>
+       <sc:name>45</sc:name>
+       <sc:id>C12_81</sc:id>
        <sc:sequenceNumber>81</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>90</sc:name>
-       <sc:id>C8_82</sc:id>
+       <sc:name>50</sc:name>
+       <sc:id>C12_82</sc:id>
        <sc:sequenceNumber>82</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>91</sc:name>
-       <sc:id>C8_83</sc:id>
+       <sc:name>51</sc:name>
+       <sc:id>C12_83</sc:id>
        <sc:sequenceNumber>83</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>92</sc:name>
-       <sc:id>C8_84</sc:id>
+       <sc:name>52</sc:name>
+       <sc:id>C12_84</sc:id>
        <sc:sequenceNumber>84</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>93</sc:name>
-       <sc:id>C8_85</sc:id>
+       <sc:name>53</sc:name>
+       <sc:id>C12_85</sc:id>
        <sc:sequenceNumber>85</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>94</sc:name>
-       <sc:id>C8_86</sc:id>
+       <sc:name>54</sc:name>
+       <sc:id>C12_86</sc:id>
        <sc:sequenceNumber>86</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>95</sc:name>
-       <sc:id>C8_87</sc:id>
+       <sc:name>55</sc:name>
+       <sc:id>C12_87</sc:id>
        <sc:sequenceNumber>87</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>96</sc:name>
-       <sc:id>C8_88</sc:id>
+       <sc:name>56</sc:name>
+       <sc:id>C12_88</sc:id>
        <sc:sequenceNumber>88</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>97</sc:name>
-       <sc:id>C8_89</sc:id>
+       <sc:name>57</sc:name>
+       <sc:id>C12_89</sc:id>
        <sc:sequenceNumber>89</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>99</sc:name>
-       <sc:id>C8_90</sc:id>
+       <sc:name>60</sc:name>
+       <sc:id>C12_90</sc:id>
        <sc:sequenceNumber>90</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>B</sc:name>
-       <sc:id>C8_91</sc:id>
+       <sc:name>70</sc:name>
+       <sc:id>C12_91</sc:id>
        <sc:sequenceNumber>91</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>D</sc:name>
-       <sc:id>C8_92</sc:id>
+       <sc:name>71</sc:name>
+       <sc:id>C12_92</sc:id>
        <sc:sequenceNumber>92</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>I</sc:name>
-       <sc:id>C8_93</sc:id>
+       <sc:name>72</sc:name>
+       <sc:id>C12_93</sc:id>
        <sc:sequenceNumber>93</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>J</sc:name>
-       <sc:id>C8_94</sc:id>
+       <sc:name>73</sc:name>
+       <sc:id>C12_94</sc:id>
        <sc:sequenceNumber>94</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>L</sc:name>
-       <sc:id>C8_95</sc:id>
+       <sc:name>80</sc:name>
+       <sc:id>C12_95</sc:id>
        <sc:sequenceNumber>95</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>O</sc:name>
-       <sc:id>C8_96</sc:id>
+       <sc:name>81</sc:name>
+       <sc:id>C12_96</sc:id>
        <sc:sequenceNumber>96</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>S</sc:name>
-       <sc:id>C8_97</sc:id>
+       <sc:name>82</sc:name>
+       <sc:id>C12_97</sc:id>
        <sc:sequenceNumber>97</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>T</sc:name>
-       <sc:id>C8_98</sc:id>
+       <sc:name>88</sc:name>
+       <sc:id>C12_98</sc:id>
        <sc:sequenceNumber>98</sc:sequenceNumber>
       </sc:Property>
       <sc:Property>
-       <sc:name>U</sc:name>
-       <sc:id>C8_99</sc:id>
+       <sc:name>90</sc:name>
+       <sc:id>C12_99</sc:id>
        <sc:sequenceNumber>99</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>V</sc:name>
-       <sc:id>C8_100</sc:id>
-       <sc:sequenceNumber>100</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>W</sc:name>
-       <sc:id>C8_101</sc:id>
-       <sc:sequenceNumber>101</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>X</sc:name>
-       <sc:id>C8_102</sc:id>
-       <sc:sequenceNumber>102</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>100</sc:name>
-       <sc:id>C8_103</sc:id>
-       <sc:sequenceNumber>103</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>101</sc:name>
-       <sc:id>C8_104</sc:id>
-       <sc:sequenceNumber>104</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>102</sc:name>
-       <sc:id>C8_105</sc:id>
-       <sc:sequenceNumber>105</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>110</sc:name>
-       <sc:id>C8_106</sc:id>
-       <sc:sequenceNumber>106</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>120</sc:name>
-       <sc:id>C8_107</sc:id>
-       <sc:sequenceNumber>107</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>121</sc:name>
-       <sc:id>C8_108</sc:id>
-       <sc:sequenceNumber>108</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>122</sc:name>
-       <sc:id>C8_109</sc:id>
-       <sc:sequenceNumber>109</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>130</sc:name>
-       <sc:id>C8_110</sc:id>
-       <sc:sequenceNumber>110</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>140</sc:name>
-       <sc:id>C8_111</sc:id>
-       <sc:sequenceNumber>111</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>150</sc:name>
-       <sc:id>C8_112</sc:id>
-       <sc:sequenceNumber>112</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>16</sc:name>
-       <sc:id>C8_113</sc:id>
-       <sc:sequenceNumber>113</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>17</sc:name>
-       <sc:id>C8_114</sc:id>
-       <sc:sequenceNumber>114</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>200</sc:name>
-       <sc:id>C8_115</sc:id>
-       <sc:sequenceNumber>115</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>201</sc:name>
-       <sc:id>C8_116</sc:id>
-       <sc:sequenceNumber>116</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>202</sc:name>
-       <sc:id>C8_117</sc:id>
-       <sc:sequenceNumber>117</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>203</sc:name>
-       <sc:id>C8_118</sc:id>
-       <sc:sequenceNumber>118</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>204</sc:name>
-       <sc:id>C8_119</sc:id>
-       <sc:sequenceNumber>119</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>205</sc:name>
-       <sc:id>C8_120</sc:id>
-       <sc:sequenceNumber>120</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>206</sc:name>
-       <sc:id>C8_121</sc:id>
-       <sc:sequenceNumber>121</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>207</sc:name>
-       <sc:id>C8_122</sc:id>
-       <sc:sequenceNumber>122</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>208</sc:name>
-       <sc:id>C8_123</sc:id>
-       <sc:sequenceNumber>123</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>209</sc:name>
-       <sc:id>C8_124</sc:id>
-       <sc:sequenceNumber>124</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>210</sc:name>
-       <sc:id>C8_125</sc:id>
-       <sc:sequenceNumber>125</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>211</sc:name>
-       <sc:id>C8_126</sc:id>
-       <sc:sequenceNumber>126</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>212</sc:name>
-       <sc:id>C8_127</sc:id>
-       <sc:sequenceNumber>127</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>213</sc:name>
-       <sc:id>C8_128</sc:id>
-       <sc:sequenceNumber>128</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>214</sc:name>
-       <sc:id>C8_129</sc:id>
-       <sc:sequenceNumber>129</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>215</sc:name>
-       <sc:id>C8_130</sc:id>
-       <sc:sequenceNumber>130</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>216</sc:name>
-       <sc:id>C8_131</sc:id>
-       <sc:sequenceNumber>131</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>217</sc:name>
-       <sc:id>C8_132</sc:id>
-       <sc:sequenceNumber>132</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>218</sc:name>
-       <sc:id>C8_133</sc:id>
-       <sc:sequenceNumber>133</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>219</sc:name>
-       <sc:id>C8_134</sc:id>
-       <sc:sequenceNumber>134</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>220</sc:name>
-       <sc:id>C8_135</sc:id>
-       <sc:sequenceNumber>135</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>230</sc:name>
-       <sc:id>C8_136</sc:id>
-       <sc:sequenceNumber>136</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>231</sc:name>
-       <sc:id>C8_137</sc:id>
-       <sc:sequenceNumber>137</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>240</sc:name>
-       <sc:id>C8_138</sc:id>
-       <sc:sequenceNumber>138</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>241</sc:name>
-       <sc:id>C8_139</sc:id>
-       <sc:sequenceNumber>139</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>242</sc:name>
-       <sc:id>C8_140</sc:id>
-       <sc:sequenceNumber>140</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>250</sc:name>
-       <sc:id>C8_141</sc:id>
-       <sc:sequenceNumber>141</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>301</sc:name>
-       <sc:id>C8_142</sc:id>
-       <sc:sequenceNumber>142</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>302</sc:name>
-       <sc:id>C8_143</sc:id>
-       <sc:sequenceNumber>143</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>303</sc:name>
-       <sc:id>C8_144</sc:id>
-       <sc:sequenceNumber>144</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>304</sc:name>
-       <sc:id>C8_145</sc:id>
-       <sc:sequenceNumber>145</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>305</sc:name>
-       <sc:id>C8_146</sc:id>
-       <sc:sequenceNumber>146</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>306</sc:name>
-       <sc:id>C8_147</sc:id>
-       <sc:sequenceNumber>147</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>307</sc:name>
-       <sc:id>C8_148</sc:id>
-       <sc:sequenceNumber>148</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>308</sc:name>
-       <sc:id>C8_149</sc:id>
-       <sc:sequenceNumber>149</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>309</sc:name>
-       <sc:id>C8_150</sc:id>
-       <sc:sequenceNumber>150</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>310</sc:name>
-       <sc:id>C8_151</sc:id>
-       <sc:sequenceNumber>151</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>311</sc:name>
-       <sc:id>C8_152</sc:id>
-       <sc:sequenceNumber>152</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>312</sc:name>
-       <sc:id>C8_153</sc:id>
-       <sc:sequenceNumber>153</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>313</sc:name>
-       <sc:id>C8_154</sc:id>
-       <sc:sequenceNumber>154</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>314</sc:name>
-       <sc:id>C8_155</sc:id>
-       <sc:sequenceNumber>155</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>315</sc:name>
-       <sc:id>C8_156</sc:id>
-       <sc:sequenceNumber>156</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>316</sc:name>
-       <sc:id>C8_157</sc:id>
-       <sc:sequenceNumber>157</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>317</sc:name>
-       <sc:id>C8_158</sc:id>
-       <sc:sequenceNumber>158</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>318</sc:name>
-       <sc:id>C8_159</sc:id>
-       <sc:sequenceNumber>159</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>320</sc:name>
-       <sc:id>C8_160</sc:id>
-       <sc:sequenceNumber>160</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>321</sc:name>
-       <sc:id>C8_161</sc:id>
-       <sc:sequenceNumber>161</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>57</sc:name>
-       <sc:id>C8_162</sc:id>
-       <sc:sequenceNumber>162</sc:sequenceNumber>
-      </sc:Property>
-      <sc:Property>
-       <sc:name>88</sc:name>
-       <sc:id>C8_163</sc:id>
-       <sc:sequenceNumber>163</sc:sequenceNumber>
       </sc:Property>
      </sc:properties>
     </sc:Class>

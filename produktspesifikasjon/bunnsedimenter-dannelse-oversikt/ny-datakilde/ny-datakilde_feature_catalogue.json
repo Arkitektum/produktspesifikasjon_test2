@@ -67,7 +67,7 @@
       },
       {
         "name": "temakvalitet",
-        "type": "string",
+        "type": "Temakvalitet",
         "cardinality": "0..1",
         "description": "Kvaliteten på registrering/kartlegging av tema sett i forhold til faktiske forhold i naturen. Ulik tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets økonomi. Med nøyaktighet i denne sammenheng menes hvor korrekt registreringen avspeiler objektets posisjon i naturen og presisjonen i valg av tematisk innhold i forhold til generalisering\r\n<br/>Merknad: Tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets målsetning",
         "valueDomain": {
@@ -102,7 +102,7 @@
       },
       {
         "name": "geolPavisningstype",
-        "type": "string",
+        "type": "GeolPavisningstype",
         "cardinality": "0..1",
         "description": "Hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen.",
         "valueDomain": {
@@ -232,7 +232,7 @@
         "attributes": [
           {
             "name": "målemetode",
-            "type": "string",
+            "type": "Målemetode",
             "cardinality": "0..1",
             "description": "Kode på metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
             "valueDomain": {
@@ -533,7 +533,7 @@
       },
       {
         "name": "medium",
-        "type": "string",
+        "type": "Medium",
         "cardinality": "0..1",
         "description": "Objektets beliggenhet i forhold til jordoverflaten<br/>Eksempel:\r\nPå bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
         "valueDomain": {
@@ -693,7 +693,7 @@
       },
       {
         "name": "temakvalitet",
-        "type": "string",
+        "type": "Temakvalitet",
         "cardinality": "0..1",
         "description": "Kvaliteten på registrering/kartlegging av tema sett i forhold til faktiske forhold i naturen. Ulik tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets økonomi. Med nøyaktighet i denne sammenheng menes hvor korrekt registreringen avspeiler objektets posisjon i naturen og presisjonen i valg av tematisk innhold i forhold til generalisering\r\n<br/>Merknad: Tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets målsetning",
         "valueDomain": {
@@ -728,7 +728,7 @@
       },
       {
         "name": "geolPavisningstype",
-        "type": "string",
+        "type": "GeolPavisningstype",
         "cardinality": "0..1",
         "description": "Hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen.",
         "valueDomain": {
@@ -858,7 +858,7 @@
         "attributes": [
           {
             "name": "målemetode",
-            "type": "string",
+            "type": "Målemetode",
             "cardinality": "0..1",
             "description": "Kode på metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
             "valueDomain": {
@@ -1159,7 +1159,7 @@
       },
       {
         "name": "medium",
-        "type": "string",
+        "type": "Medium",
         "cardinality": "0..1",
         "description": "Objektets beliggenhet i forhold til jordoverflaten<br/>Eksempel:\r\nPå bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
         "valueDomain": {
@@ -1292,7 +1292,7 @@
       },
       {
         "name": "losmassetype",
-        "type": "string",
+        "type": "Losmassetype",
         "cardinality": "1..1",
         "description": "Kvartærgeologiske løsmassetyper (jordartstyper)",
         "valueDomain": {
@@ -1773,7 +1773,7 @@
       },
       {
         "name": "temakvalitet",
-        "type": "string",
+        "type": "Temakvalitet",
         "cardinality": "0..1",
         "description": "Kvaliteten på registrering/kartlegging av tema sett i forhold til faktiske forhold i naturen. Ulik tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets økonomi. Med nøyaktighet i denne sammenheng menes hvor korrekt registreringen avspeiler objektets posisjon i naturen og presisjonen i valg av tematisk innhold i forhold til generalisering\r\n<br/>Merknad: Tematisk oppløsning/generaliseringsgrad kan være styrt av temaets samfunnsmessige betydning, områdets arealmessige betydning eller prosjektets målsetning",
         "valueDomain": {
@@ -1808,7 +1808,7 @@
       },
       {
         "name": "geolPavisningstype",
-        "type": "string",
+        "type": "GeolPavisningstype",
         "cardinality": "0..1",
         "description": "Hvor sikkert et geologisk objekt er påvist i terrenget, eller hvilken metode som ligger til grunn for å påvisningen/registreringen.",
         "valueDomain": {
@@ -1938,7 +1938,7 @@
         "attributes": [
           {
             "name": "målemetode",
-            "type": "string",
+            "type": "Målemetode",
             "cardinality": "0..1",
             "description": "Kode på metode for måling i grunnriss (x,y), og høyde (z) når metoden er den samme som ved måling i grunnriss",
             "valueDomain": {
@@ -2239,7 +2239,7 @@
       },
       {
         "name": "medium",
-        "type": "string",
+        "type": "Medium",
         "cardinality": "0..1",
         "description": "Objektets beliggenhet i forhold til jordoverflaten<br/>Eksempel:\r\nPå bro, i tunnel, inne i et bygningsmessig anlegg, etc.",
         "valueDomain": {

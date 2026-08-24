@@ -64,9 +64,13 @@ types:
       temakvalitet:
         sourcePath: temakvalitet
         type: STRING
+        constraints:
+          codelist: Temakvalitet
       geolPavisningstype:
         sourcePath: geolpavisningstype
         type: STRING
+        constraints:
+          codelist: GeolPavisningstype
       geolPavisningstypeNavn:
         sourcePath: geolpavisningstypenavn
         type: STRING
@@ -78,6 +82,8 @@ types:
           målemetode:
             sourcePath: målemetode
             type: STRING
+            constraints:
+              codelist: M_lemetode
           målemetodeNavn:
             sourcePath: målemetodenavn
             type: STRING
@@ -87,6 +93,8 @@ types:
       medium:
         sourcePath: medium
         type: STRING
+        constraints:
+          codelist: Medium
       mediumNavn:
         sourcePath: mediumnavn
         type: STRING
@@ -158,9 +166,13 @@ types:
       temakvalitet:
         sourcePath: temakvalitet
         type: STRING
+        constraints:
+          codelist: Temakvalitet
       geolPavisningstype:
         sourcePath: geolpavisningstype
         type: STRING
+        constraints:
+          codelist: GeolPavisningstype
       geolPavisningstypeNavn:
         sourcePath: geolpavisningstypenavn
         type: STRING
@@ -172,6 +184,8 @@ types:
           målemetode:
             sourcePath: målemetode
             type: STRING
+            constraints:
+              codelist: M_lemetode
           målemetodeNavn:
             sourcePath: målemetodenavn
             type: STRING
@@ -181,6 +195,8 @@ types:
       medium:
         sourcePath: medium
         type: STRING
+        constraints:
+          codelist: Medium
       mediumNavn:
         sourcePath: mediumnavn
         type: STRING
@@ -233,6 +249,7 @@ types:
         sourcePath: losmassetype
         type: STRING
         constraints:
+          codelist: Losmassetype
           required: true
       losmassetypeNavn:
         sourcePath: losmassetypenavn
@@ -285,9 +302,13 @@ types:
       temakvalitet:
         sourcePath: temakvalitet
         type: STRING
+        constraints:
+          codelist: Temakvalitet
       geolPavisningstype:
         sourcePath: geolpavisningstype
         type: STRING
+        constraints:
+          codelist: GeolPavisningstype
       geolPavisningstypeNavn:
         sourcePath: geolpavisningstypenavn
         type: STRING
@@ -299,6 +320,8 @@ types:
           målemetode:
             sourcePath: målemetode
             type: STRING
+            constraints:
+              codelist: M_lemetode
           målemetodeNavn:
             sourcePath: målemetodenavn
             type: STRING
@@ -308,6 +331,8 @@ types:
       medium:
         sourcePath: medium
         type: STRING
+        constraints:
+          codelist: Medium
       mediumNavn:
         sourcePath: mediumnavn
         type: STRING
