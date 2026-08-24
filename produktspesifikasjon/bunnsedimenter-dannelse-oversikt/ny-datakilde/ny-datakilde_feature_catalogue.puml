@@ -36,11 +36,11 @@ package "Objekttyper" {
     + førsteDigitaliseringsdato [0..1] : Date
     + oppdateringsdato [0..1] : Date
     + datauttaksdato [0..1] : Date
-    + temakvalitet [0..1] : CharacterString
-    + geolPavisningstype [0..1] : CharacterString
+    + temakvalitet [0..1] : Temakvalitet
+    + geolPavisningstype [0..1] : GeolPavisningstype
     + geolPavisningstypeNavn [0..1] : CharacterString
     + kvalitet [0..1] : Posisjonskvalitet
-    + medium [0..1] : CharacterString
+    + medium [0..1] : Medium
     + mediumNavn [0..1] : CharacterString
     + opphav [0..1] : CharacterString
 
@@ -61,11 +61,11 @@ package "Objekttyper" {
     + førsteDigitaliseringsdato [0..1] : Date
     + oppdateringsdato [0..1] : Date
     + datauttaksdato [0..1] : Date
-    + temakvalitet [0..1] : CharacterString
-    + geolPavisningstype [0..1] : CharacterString
+    + temakvalitet [0..1] : Temakvalitet
+    + geolPavisningstype [0..1] : GeolPavisningstype
     + geolPavisningstypeNavn [0..1] : CharacterString
     + kvalitet [0..1] : Posisjonskvalitet
-    + medium [0..1] : CharacterString
+    + medium [0..1] : Medium
     + mediumNavn [0..1] : CharacterString
     + opphav [0..1] : CharacterString
 
@@ -78,7 +78,7 @@ package "Objekttyper" {
     + identifikasjon [0..1] : Identifikasjon
     + datauttaksdato [1..1] : Date
     + førsteDigitaliseringsdato [0..1] : Date
-    + losmassetype [1..1] : CharacterString
+    + losmassetype [1..1] : Losmassetype
     + losmassetypeNavn [1..1] : CharacterString
 
     ..Geometri..
@@ -91,11 +91,11 @@ package "Objekttyper" {
     + førsteDigitaliseringsdato [0..1] : Date
     + oppdateringsdato [0..1] : Date
     + datauttaksdato [0..1] : Date
-    + temakvalitet [0..1] : CharacterString
-    + geolPavisningstype [0..1] : CharacterString
+    + temakvalitet [0..1] : Temakvalitet
+    + geolPavisningstype [0..1] : GeolPavisningstype
     + geolPavisningstypeNavn [0..1] : CharacterString
     + kvalitet [0..1] : Posisjonskvalitet
-    + medium [0..1] : CharacterString
+    + medium [0..1] : Medium
     + mediumNavn [0..1] : CharacterString
     + opphav [0..1] : CharacterString
 
@@ -110,7 +110,7 @@ package "Objekttyper" {
   }
 
   class Posisjonskvalitet <<dataType>> {
-    + målemetode [0..1] : CharacterString
+    + målemetode [0..1] : Målemetode
     + målemetodeNavn [0..1] : CharacterString
     + nøyaktighet [0..1] : Integer
   }
